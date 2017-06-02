@@ -16,7 +16,7 @@ $('.hidden-mnu').hide("slow");
 });
 
 // одинаковой высоты разные по длине ашки
-// $(".name class").equalHeights();
+ $(".serves-block_contant_text").equalHeights();
 
 //Кнопка наверх с права от контента
 $("body").append('<div class="button-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>');
@@ -60,7 +60,7 @@ stagePadding         : 30
 	});
 
 
-$(".top-menu ul li a").mPageScroll2id({
+$(".top-menu ul li a, .adwise-bottom ul li a").mPageScroll2id({
 layout                 : "auto",
 offset                 : ".top-line",
 scrollEasing           : "linear",
@@ -82,7 +82,7 @@ scrollSpeed            : 1000
             filter: '.filter'
           },
           load: {
-            filter: '.app'
+            filter: '.card'
           }
         });
     }
