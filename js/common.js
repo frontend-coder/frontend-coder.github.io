@@ -17,7 +17,7 @@ $('.hidden-mnu').hide("slow");
 
 // одинаковой высоты разные по длине ашки
  $(".serves-block_contant_text").equalHeights();
-
+  $(".process-step_text").equalHeights();
 //Кнопка наверх с права от контента
 $("body").append('<div class="button-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>');
 // Заставляет кнопку работать как ссылку на самый вверх
