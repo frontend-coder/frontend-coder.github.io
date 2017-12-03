@@ -1,5 +1,79 @@
 @charset "UTF-8";
+/* // задать все переменные
+ */
+/* p {
+  @include font-size(20px);
+ } */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
 /*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=dd756061b99b30782a31)
@@ -8,31 +82,727 @@ body {
   margin: 0px 0px 0px 0px; }
 
 .container {
-  /*   margin-right: auto;
+  margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px; */
-  width: 1170px;
-  margin: 0 auto; }
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto; }
 
+.row {
+  width: 100%; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-11 {
+  width: 91.66666667%; }
+
+.col-xs-10 {
+  width: 83.33333333%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-8 {
+  width: 66.66666667%; }
+
+.col-xs-7 {
+  width: 58.33333333%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-5 {
+  width: 41.66666667%; }
+
+.col-xs-4 {
+  width: 33.33333333%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-2 {
+  width: 16.66666667%; }
+
+.col-xs-1 {
+  width: 8.33333333%; }
+
+.col-xs-pull-12 {
+  right: 100%; }
+
+.col-xs-pull-11 {
+  right: 91.66666667%; }
+
+.col-xs-pull-10 {
+  right: 83.33333333%; }
+
+.col-xs-pull-9 {
+  right: 75%; }
+
+.col-xs-pull-8 {
+  right: 66.66666667%; }
+
+.col-xs-pull-7 {
+  right: 58.33333333%; }
+
+.col-xs-pull-6 {
+  right: 50%; }
+
+.col-xs-pull-5 {
+  right: 41.66666667%; }
+
+.col-xs-pull-4 {
+  right: 33.33333333%; }
+
+.col-xs-pull-3 {
+  right: 25%; }
+
+.col-xs-pull-2 {
+  right: 16.66666667%; }
+
+.col-xs-pull-1 {
+  right: 8.33333333%; }
+
+.col-xs-pull-0 {
+  right: auto; }
+
+.col-xs-push-12 {
+  left: 100%; }
+
+.col-xs-push-11 {
+  left: 91.66666667%; }
+
+.col-xs-push-10 {
+  left: 83.33333333%; }
+
+.col-xs-push-9 {
+  left: 75%; }
+
+.col-xs-push-8 {
+  left: 66.66666667%; }
+
+.col-xs-push-7 {
+  left: 58.33333333%; }
+
+.col-xs-push-6 {
+  left: 50%; }
+
+.col-xs-push-5 {
+  left: 41.66666667%; }
+
+.col-xs-push-4 {
+  left: 33.33333333%; }
+
+.col-xs-push-3 {
+  left: 25%; }
+
+.col-xs-push-2 {
+  left: 16.66666667%; }
+
+.col-xs-push-1 {
+  left: 8.33333333%; }
+
+.col-xs-push-0 {
+  left: auto; }
+
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+.col-xs-offset-11 {
+  margin-left: 91.66666667%; }
+
+.col-xs-offset-10 {
+  margin-left: 83.33333333%; }
+
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+.col-xs-offset-8 {
+  margin-left: 66.66666667%; }
+
+.col-xs-offset-7 {
+  margin-left: 58.33333333%; }
+
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+.col-xs-offset-5 {
+  margin-left: 41.66666667%; }
+
+.col-xs-offset-4 {
+  margin-left: 33.33333333%; }
+
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+.col-xs-offset-2 {
+  margin-left: 16.66666667%; }
+
+.col-xs-offset-1 {
+  margin-left: 8.33333333%; }
+
+.col-xs-offset-0 {
+  margin-left: 0%; }
+
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; }
+  .col-sm-12 {
+    width: 100%; }
+  .col-sm-11 {
+    width: 91.66666667%; }
+  .col-sm-10 {
+    width: 83.33333333%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-8 {
+    width: 66.66666667%; }
+  .col-sm-7 {
+    width: 58.33333333%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-5 {
+    width: 41.66666667%; }
+  .col-sm-4 {
+    width: 33.33333333%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-2 {
+    width: 16.66666667%; }
+  .col-sm-1 {
+    width: 8.33333333%; }
+  .col-sm-pull-12 {
+    right: 100%; }
+  .col-sm-pull-11 {
+    right: 91.66666667%; }
+  .col-sm-pull-10 {
+    right: 83.33333333%; }
+  .col-sm-pull-9 {
+    right: 75%; }
+  .col-sm-pull-8 {
+    right: 66.66666667%; }
+  .col-sm-pull-7 {
+    right: 58.33333333%; }
+  .col-sm-pull-6 {
+    right: 50%; }
+  .col-sm-pull-5 {
+    right: 41.66666667%; }
+  .col-sm-pull-4 {
+    right: 33.33333333%; }
+  .col-sm-pull-3 {
+    right: 25%; }
+  .col-sm-pull-2 {
+    right: 16.66666667%; }
+  .col-sm-pull-1 {
+    right: 8.33333333%; }
+  .col-sm-pull-0 {
+    right: auto; }
+  .col-sm-push-12 {
+    left: 100%; }
+  .col-sm-push-11 {
+    left: 91.66666667%; }
+  .col-sm-push-10 {
+    left: 83.33333333%; }
+  .col-sm-push-9 {
+    left: 75%; }
+  .col-sm-push-8 {
+    left: 66.66666667%; }
+  .col-sm-push-7 {
+    left: 58.33333333%; }
+  .col-sm-push-6 {
+    left: 50%; }
+  .col-sm-push-5 {
+    left: 41.66666667%; }
+  .col-sm-push-4 {
+    left: 33.33333333%; }
+  .col-sm-push-3 {
+    left: 25%; }
+  .col-sm-push-2 {
+    left: 16.66666667%; }
+  .col-sm-push-1 {
+    left: 8.33333333%; }
+  .col-sm-push-0 {
+    left: auto; }
+  .col-sm-offset-12 {
+    margin-left: 100%; }
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-sm-offset-0 {
+    margin-left: 0%; } }
+
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; }
+  .col-md-12 {
+    width: 100%; }
+  .col-md-11 {
+    width: 91.66666667%; }
+  .col-md-10 {
+    width: 83.33333333%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-8 {
+    width: 66.66666667%; }
+  .col-md-7 {
+    width: 58.33333333%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-5 {
+    width: 41.66666667%; }
+  .col-md-4 {
+    width: 33.33333333%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-2 {
+    width: 16.66666667%; }
+  .col-md-1 {
+    width: 8.33333333%; }
+  .col-md-pull-12 {
+    right: 100%; }
+  .col-md-pull-11 {
+    right: 91.66666667%; }
+  .col-md-pull-10 {
+    right: 83.33333333%; }
+  .col-md-pull-9 {
+    right: 75%; }
+  .col-md-pull-8 {
+    right: 66.66666667%; }
+  .col-md-pull-7 {
+    right: 58.33333333%; }
+  .col-md-pull-6 {
+    right: 50%; }
+  .col-md-pull-5 {
+    right: 41.66666667%; }
+  .col-md-pull-4 {
+    right: 33.33333333%; }
+  .col-md-pull-3 {
+    right: 25%; }
+  .col-md-pull-2 {
+    right: 16.66666667%; }
+  .col-md-pull-1 {
+    right: 8.33333333%; }
+  .col-md-pull-0 {
+    right: auto; }
+  .col-md-push-12 {
+    left: 100%; }
+  .col-md-push-11 {
+    left: 91.66666667%; }
+  .col-md-push-10 {
+    left: 83.33333333%; }
+  .col-md-push-9 {
+    left: 75%; }
+  .col-md-push-8 {
+    left: 66.66666667%; }
+  .col-md-push-7 {
+    left: 58.33333333%; }
+  .col-md-push-6 {
+    left: 50%; }
+  .col-md-push-5 {
+    left: 41.66666667%; }
+  .col-md-push-4 {
+    left: 33.33333333%; }
+  .col-md-push-3 {
+    left: 25%; }
+  .col-md-push-2 {
+    left: 16.66666667%; }
+  .col-md-push-1 {
+    left: 8.33333333%; }
+  .col-md-push-0 {
+    left: auto; }
+  .col-md-offset-12 {
+    margin-left: 100%; }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-md-offset-9 {
+    margin-left: 75%; }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-md-offset-6 {
+    margin-left: 50%; }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-md-offset-0 {
+    margin-left: 0%; } }
+
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; }
+  .col-lg-12 {
+    width: 100%; }
+  .col-lg-11 {
+    width: 91.66666667%; }
+  .col-lg-10 {
+    width: 83.33333333%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-8 {
+    width: 66.66666667%; }
+  .col-lg-7 {
+    width: 58.33333333%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-5 {
+    width: 41.66666667%; }
+  .col-lg-4 {
+    width: 33.33333333%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-2 {
+    width: 16.66666667%; }
+  .col-lg-1 {
+    width: 8.33333333%; }
+  .col-lg-pull-12 {
+    right: 100%; }
+  .col-lg-pull-11 {
+    right: 91.66666667%; }
+  .col-lg-pull-10 {
+    right: 83.33333333%; }
+  .col-lg-pull-9 {
+    right: 75%; }
+  .col-lg-pull-8 {
+    right: 66.66666667%; }
+  .col-lg-pull-7 {
+    right: 58.33333333%; }
+  .col-lg-pull-6 {
+    right: 50%; }
+  .col-lg-pull-5 {
+    right: 41.66666667%; }
+  .col-lg-pull-4 {
+    right: 33.33333333%; }
+  .col-lg-pull-3 {
+    right: 25%; }
+  .col-lg-pull-2 {
+    right: 16.66666667%; }
+  .col-lg-pull-1 {
+    right: 8.33333333%; }
+  .col-lg-pull-0 {
+    right: auto; }
+  .col-lg-push-12 {
+    left: 100%; }
+  .col-lg-push-11 {
+    left: 91.66666667%; }
+  .col-lg-push-10 {
+    left: 83.33333333%; }
+  .col-lg-push-9 {
+    left: 75%; }
+  .col-lg-push-8 {
+    left: 66.66666667%; }
+  .col-lg-push-7 {
+    left: 58.33333333%; }
+  .col-lg-push-6 {
+    left: 50%; }
+  .col-lg-push-5 {
+    left: 41.66666667%; }
+  .col-lg-push-4 {
+    left: 33.33333333%; }
+  .col-lg-push-3 {
+    left: 25%; }
+  .col-lg-push-2 {
+    left: 16.66666667%; }
+  .col-lg-push-1 {
+    left: 8.33333333%; }
+  .col-lg-push-0 {
+    left: auto; }
+  .col-lg-offset-12 {
+    margin-left: 100%; }
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%; }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%; }
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%; }
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%; }
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%; }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%; }
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%; }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%; }
+  .col-lg-offset-0 {
+    margin-left: 0%; } }
+
 .clearfix:before,
-.clearfix:after {
-  content: "";
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: " ";
   display: table; }
 
-.clearfix:after {
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after {
   clear: both; }
 
-.clearfix {
-  overflow: auto;
-  zoom: 1; }
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pull-right {
+  float: right !important; }
+
+.pull-left {
+  float: left !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.invisible {
+  visibility: hidden; }
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
+.hidden {
+  display: none !important; }
+
+.affix {
+  position: fixed; }
 
 @-ms-viewport {
   width: device-width; }
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important; }
+
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important; }
+
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important; }
+  table.visible-xs {
+    display: table !important; }
+  tr.visible-xs {
+    display: table-row !important; }
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-block {
+    display: block !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-inline {
+    display: inline !important; } }
+
+@media (max-width: 767px) {
+  .visible-xs-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important; }
+  table.visible-sm {
+    display: table !important; }
+  tr.visible-sm {
+    display: table-row !important; }
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-block {
+    display: block !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline {
+    display: inline !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important; }
+  table.visible-md {
+    display: table !important; }
+  tr.visible-md {
+    display: table-row !important; }
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-block {
+    display: block !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline {
+    display: inline !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md-inline-block {
+    display: inline-block !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important; }
+  table.visible-lg {
+    display: table !important; }
+  tr.visible-lg {
+    display: table-row !important; }
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-block {
+    display: block !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-inline {
+    display: inline !important; } }
+
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important; } }
+
+.visible-print {
+  display: none !important; }
+
+@media print {
+  .visible-print {
+    display: block !important; }
+  table.visible-print {
+    display: table !important; }
+  tr.visible-print {
+    display: table-row !important; }
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important; } }
+
+.visible-print-block {
+  display: none !important; }
+
+@media print {
+  .visible-print-block {
+    display: block !important; } }
+
+.visible-print-inline {
+  display: none !important; }
+
+@media print {
+  .visible-print-inline {
+    display: inline !important; } }
+
+.visible-print-inline-block {
+  display: none !important; }
+
+@media print {
+  .visible-print-inline-block {
+    display: inline-block !important; } }
+
+@media print {
+  .hidden-print {
+    display: none !important; } }
 
 /*!
  *  Font Awesome 4.7.0  */
@@ -2244,6 +3014,81 @@ body {
   overflow: visible;
   clip: auto; }
 
+/*!
+ * jQuery Tabs - jQuery plugin to create simple vertical and horizontal tabs
+ * Copyright 2017 - Anantajit JG
+ * https://github.com/anantajitjg/jquery-tabs
+ */
+.jq-tab-wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  padding: 1em; }
+
+.jq-tab-wrapper.horizontal-tab {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+          flex-direction: column; }
+
+.jq-tab-menu {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+          flex: 1; }
+
+.jq-tab-menu .jq-tab-title {
+  background: #d7d7d7;
+  border-bottom: 1px solid #d1d1d1;
+  cursor: pointer;
+  padding: 1em 2em;
+  -webkit-transition: background .2s;
+  -o-transition: background .2s;
+  transition: background .2s; }
+
+.jq-tab-menu .jq-tab-title:first-child {
+  border-top: 1px solid #d1d1d1; }
+
+.jq-tab-menu .jq-tab-title.active, .jq-tab-menu .jq-tab-title:hover {
+  background: #e4e4e4;
+  border-left: 1px solid #505050; }
+
+.horizontal-tab .jq-tab-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex; }
+
+.horizontal-tab .jq-tab-menu .jq-tab-title {
+  border-bottom: none;
+  border-right: 1px solid #d1d1d1;
+  border-left: none; }
+
+.horizontal-tab .jq-tab-menu .jq-tab-title:first-child {
+  border-left: 1px solid #d1d1d1;
+  border-top: none; }
+
+.horizontal-tab .jq-tab-menu .jq-tab-title.active, .horizontal-tab .jq-tab-menu .jq-tab-title:hover {
+  border-bottom: 1px solid #505050; }
+
+.jq-tab-content-wrapper {
+  -webkit-box-flex: 4;
+  -ms-flex: 4;
+  -webkit-flex: 4;
+          flex: 4; }
+
+.jq-tab-content {
+  display: none;
+  padding: 1em 1.8em; }
+
+.jq-tab-content.active {
+  display: block; }
+
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -2624,548 +3469,1151 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px; } }
 
-/**
- * Owl Carousel v2.2.1
- * Copyright 2013-2017 David Deutsch
- * Licensed under  ()
- */
-.owl-carousel, .owl-carousel .owl-item {
-  -webkit-tap-highlight-color: transparent;
-  position: relative; }
+/* // @import 'app/libs/owlcarousel/owl.carousel';
+// @import 'app/libs/owlcarousel/owl.theme.default'; */
+/*
+@import 'app/libs/hamburger/hamburgers.min';
+@import 'app/libs/mmenu/jquery.mmenu.all';
 
-.owl-carousel {
-  display: none;
-  width: 100%;
-  z-index: 1; }
-
-.owl-carousel .owl-stage {
-  position: relative;
-  -ms-touch-action: pan-Y;
-  -moz-backface-visibility: hidden; }
-
-.owl-carousel .owl-stage:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0; }
-
-.owl-carousel .owl-stage-outer {
-  position: relative;
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0); }
-
-.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0); }
-
-.owl-carousel .owl-item {
-  min-height: 1px;
-  float: left;
-  -webkit-backface-visibility: hidden;
-  -webkit-touch-callout: none; }
-
-.owl-carousel .owl-item img {
-  display: block;
-  width: 100%; }
-
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
-  display: none; }
-
-.no-js .owl-carousel, .owl-carousel.owl-loaded {
-  display: block; }
-
-.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
-  cursor: pointer;
-  cursor: hand;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel.owl-loading {
-  opacity: 0;
-  display: block; }
-
-.owl-carousel.owl-hidden {
-  opacity: 0; }
-
-.owl-carousel.owl-refresh .owl-item {
-  visibility: hidden; }
-
-.owl-carousel.owl-drag .owl-item {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.owl-carousel.owl-grab {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab; }
-
-.owl-carousel.owl-rtl {
-  direction: rtl; }
-
-.owl-carousel.owl-rtl .owl-item {
-  float: right; }
-
-.owl-carousel .animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both; }
-
-.owl-carousel .owl-animated-in {
-  z-index: 0; }
-
-.owl-carousel .owl-animated-out {
-  z-index: 1; }
-
-.owl-carousel .fadeOut {
-  -webkit-animation-name: fadeOut;
-          animation-name: fadeOut; }
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-
-.owl-height {
-  -webkit-transition: height .5s ease-in-out;
-  -o-transition: height .5s ease-in-out;
-  transition: height .5s ease-in-out; }
-
-.owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
-  -webkit-transition: opacity .4s ease;
-  -o-transition: opacity .4s ease;
-  transition: opacity .4s ease; }
-
-.owl-carousel .owl-item img.owl-lazy {
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d; }
-
-.owl-carousel .owl-video-wrapper {
-  position: relative;
-  height: 100%;
-  background: #000; }
-
-.owl-carousel .owl-video-play-icon {
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  left: 50%;
-  top: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
-  background: url(owl.video.play.png) no-repeat;
-  cursor: pointer;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  -webkit-transition: -webkit-transform .1s ease;
-  transition: -webkit-transform .1s ease;
-  -o-transition: transform .1s ease;
-  transition: transform .1s ease;
-  transition: transform .1s ease, -webkit-transform .1s ease; }
-
-.owl-carousel .owl-video-play-icon:hover {
-  -ms-transform: scale(1.3, 1.3);
-  -webkit-transform: scale(1.3, 1.3);
-          transform: scale(1.3, 1.3); }
-
-.owl-carousel .owl-video-playing .owl-video-play-icon, .owl-carousel .owl-video-playing .owl-video-tn {
-  display: none; }
-
-.owl-carousel .owl-video-tn {
-  opacity: 0;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
-  -webkit-transition: opacity .4s ease;
-  -o-transition: opacity .4s ease;
-  transition: opacity .4s ease; }
-
-.owl-carousel .owl-video-frame {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  width: 100%; }
-
-/**
- * Owl Carousel v2.2.1
- * Copyright 2013-2017 David Deutsch
- * Licensed under  ()
- */
-.owl-theme .owl-dots, .owl-theme .owl-nav {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent; }
-
-.owl-theme .owl-nav {
-  margin-top: 10px; }
-
-.owl-theme .owl-nav [class*=owl-] {
-  color: #FFF;
-  font-size: 14px;
-  margin: 5px;
-  padding: 4px 7px;
-  background: #D6D6D6;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 3px;
-          border-radius: 3px; }
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-  background: #869791;
-  color: #FFF;
-  text-decoration: none; }
-
-.owl-theme .owl-nav .disabled {
-  opacity: .5;
-  cursor: default; }
-
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px; }
-
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-  zoom: 1; }
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 10px;
-  height: 10px;
-  margin: 5px 7px;
-  background: #D6D6D6;
-  display: block;
-  -webkit-backface-visibility: visible;
-  -webkit-transition: opacity .2s ease;
-  -o-transition: opacity .2s ease;
-  transition: opacity .2s ease;
-  -webkit-border-radius: 30px;
-          border-radius: 30px; }
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #869791; }
+*/
 
 /*# sourceMappingURL=libs.min.css.map */
 
 @charset "UTF-8";
+/* // задать все переменные
+ */
+/* p {
+  @include font-size(20px);
+ } */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
 /*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
 *::-webkit-input-placeholder {
-  color: #666;
+  color: #bdbdbd;
   opacity: 1; }
 
 *:-moz-placeholder {
-  color: #666;
+  color: #bdbdbd;
   opacity: 1; }
 
 *::-moz-placeholder {
-  color: #666;
+  color: #bdbdbd;
   opacity: 1; }
 
 *:-ms-input-placeholder {
-  color: #666;
+  color: #bdbdbd;
   opacity: 1; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  outline: none;
+  /*   padding: 0;
+  margin: 0; */ }
 
 html {
   width: 100%;
+  /* height: 100%; */
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.42;
   margin: 0;
   padding: 0;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden;
+  /* overflow-x: hidden; */ }
 
 body {
-  font-family: Georgia, serif;
+  font-family: "OpenSansRegular", sans-serif;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.42;
   position: relative;
-  color: #666;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  opacity: 1;
   -webkit-backface-visibility: hidden;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
 a {
-  outline: 0; }
+  outline: 0;
+  text-decoration: none; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 .hidden {
   display: none; }
 
+/* // задать все переменные
+ */
+/* p {
+  @include font-size(20px);
+ } */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
 /*все переменные и моды */
-header {
-  background: #eba35d;
-  /* Old browsers */
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #d19869 0%, #ffe3b4 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#d19869), to(#ffe3b4));
-  background: -o-linear-gradient(top, #d19869 0%, #ffe3b4 100%);
-  background: linear-gradient(to bottom, #d19869 0%, #ffe3b4 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d19869', endColorstr='#ffe3b4',GradientType=0 );
-  /* IE6-9 */
-  padding: 20px 0; }
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+/* font-family: "OpenSansRegular"; */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-header h1 {
-  color: #ffffff;
-  font-size: 1.625rem;
-  text-align: center;
-  margin-bottom: 30px; }
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-header h1 span {
-  text-transform: uppercase; }
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-header h2 {
-  color: #c97019;
-  text-align: center;
-  font-size: 1.5rem; }
+@font-face {
+  font-family: "RalewayLight";
+  src: url("../fonts/RalewayLight/RalewayLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayLight/RalewayLight.woff") format("woff"), url("../fonts/RalewayLight/RalewayLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-.block {
-  padding: 20px 0; }
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-.block_cover, .block_text {
-  float: left;
-  width: 50%; }
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-.block_cover {
-  text-align: center; }
+/* // задать все переменные
+ */
+/* p {
+  @include font-size(20px);
+ } */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
 
-.block_cover_autor {
-  padding-right: 50px; }
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
 
-.block_cover img {
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
+/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+.header_img {
+  background: #000 url("../images/header-pic.jpg") center center no-repeat;
+  min-height: 708px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative; }
+
+.header_img:before {
+  position: absolute;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+
+.top_line {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  z-index: 100; }
+
+.top_line_box {
+  margin: 0;
+  height: 70px;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.top_line_menu ul li {
+  display: inline-block; }
+
+.top_line_menu ul li a {
+  display: inline-block;
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  padding: 25px 25px;
+  font-family: "OpenSansSemiBold", sans-sarif;
+  color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  /*  	border-bottom: 2px solid #fff; */ }
+
+.top_line_menu ul li a:hover {
+  color: #ff8b38;
+  /* 	border-bottom: 1px solid $orange_fonts; */ }
+
+.top_line_logo {
+  width: 80px; }
+
+.top_line_logo img {
   width: 100%;
   height: auto; }
 
-h3 {
-  display: inline-block;
-  font-size: 1.5rem;
-  color: #eba35d;
-  position: relative;
-  margin: 0 10px 30px; }
+.top_content {
+  color: #ffffff;
+  padding: 10% 0; }
 
-.block_text h3:before {
+.top_content_left {
+  float: left;
+  width: 60%;
+  color: #ffffff;
+  position: relative; }
+
+.top_content_right {
+  float: left;
+  width: 40%;
+  color: #ffffff;
+  position: relative; }
+
+.top_content_left h1 {
+  padding: 0;
+  margin: 0;
+  /*  // font-size: $size; */
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  margin-bottom: 30px; }
+
+.top_content_left h1 span {
+  color: #ff8b38; }
+
+.top_content_left h2 {
+  font-family: "RalewayRegular, sans-serif";
+  /*  // font-size: $size; */
+  font-size: 2.25rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 77px;
+  position: relative; }
+
+.top_content_left h2:before {
   position: absolute;
   content: '';
-  border: 1px solid #eba35d;
-  bottom: 0;
-  width: 100%; }
+  width: 63px;
+  height: 2px;
+  left: 0;
+  bottom: -40px;
+  background-color: #fff; }
 
-.block_text p {
-  font-size: 1.25rem; }
+.top_content_left h3 {
+  font-family: "RalewayLight", sans-serif;
+  /*  // font-size: $size; */
+  font-size: 1rem; }
 
-.block_text p span {
-  font-size: 0.6875rem; }
-
-.block_text a {
-  color: #666;
+.top_button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  /*  // font-size: $size; */
+  font-size: 0.9375rem;
+  font-family: "OpenSansSemiBold";
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-.block_text a:hover {
-  color: #666;
-  text-decoration: none; }
+.top_button:hover {
+  color: #ff8b38;
+  border: 1px solid #ff8b38; }
 
-.block_list {
+/* блок с социальными кнопками под хедером */
+.social_block {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.38); }
+
+.social_box {
+  padding: 0;
+  margin: 0;
+  padding: 22px 0; }
+
+.social_box_descr {
+  float: left;
+  width: 35%; }
+
+.social_box_links {
+  float: left;
+  width: 65%; }
+
+.social_box_title {
+  color: #333333;
+  margin-bottom: 16px; }
+
+.social_box_title h2 {
+  /*  // font-size: $size; */
+  font-size: 1.25rem;
+  font-family: "OpenSansBold", sans-serif; }
+
+.social_box_text {
+  color: #86878b;
+  /*  // font-size: $size; */
+  font-size: 0.875rem; }
+
+.social_box_links ul, .social_footer_links ul {
+  margin: 8px auto;
   text-align: center; }
 
-.block_list h3 {
-  color: #000; }
+.social_box_links ul li, .social_footer_links ul li {
+  display: inline-block; }
 
-.list {
-  padding-left: 0;
-  display: inline-block;
-  list-style-type: none; }
+.social_box_links ul li a, .social_footer_links ul li a {
+  /*  // font-size: $size; */
+  font-size: 3rem;
+  color: #cccccc;
+  padding: 15px; }
 
-.list li {
-  text-align: left;
-  padding: 5px 0 15px 0;
-  margin: 10px 0;
-  position: relative;
-  border-bottom: 1px dashed #40D9E0; }
+/* // задать все переменные
+ */
+/* p {
+  @include font-size(20px);
+ } */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
 
-.list li:before {
-  font-size: 1.35rem;
-  font-family: FontAwesome;
-  top: 10px;
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
+/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+/* оформление содержимого над самой нартикой ниже top line */
+.block {
+  padding: 100px 0 130px 0; }
+
+.block_st {
+  background-color: #f5f5f5; }
+
+.sub_list_sec h2 {
+  color: #212121;
+  /*  // font-size: $size; */
+  font-size: 1.25rem;
+  line-height: 2.15;
+  margin-bottom: 60px;
+  position: relative; }
+
+.sub_list_sec h2:before {
   position: absolute;
-  left: -30px;
-  content: "\f0a4";
-  line-height: 1;
-  color: #eba35d; }
+  content: "";
+  width: 64px;
+  height: 2px;
+  background-color: #ff8b38;
+  left: 0;
+  bottom: -30px; }
 
-.polit_termes {
-  text-align: left; }
+.sub_list_descr {
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  color: #86878b;
+  line-height: 1.42; }
 
-.polit_termes span {
-  font-weight: bold; }
+.sub_list_block {
+  padding: 0;
+  margin-top: 40px; }
 
-.polit_list {
-  text-align: left; }
+.sub_list_icon {
+  float: left;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+  border: 2px solid #ff8b38;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
 
-ol {
-  font-weight: bold; }
+.sub_list_icon .fa {
+  color: #ff8b38; }
 
-.polit_list li {
-  font-weight: normal;
-  margin-top: 5px; }
+.sub_list_description {
+  float: left;
+  margin-left: 40px;
+  width: 440px; }
 
-.polit_list li span {
-  font-weight: bold; }
+.block_title {
+  text-align: center;
+  margin-bottom: 63px;
+  position: relative; }
 
-.polit_list li:first-child {
-  margin-top: 10px; }
+.block_title h2 {
+  font-family: "RalewayRegular", sans-serif;
+  /*  // font-size: $size; */
+  font-size: 2.25rem;
+  color: #212121;
+  text-transform: uppercase; }
 
-.polit_list li:last-child {
-  margin-bottom: 10px; }
+.block_title:before {
+  position: absolute;
+  content: '';
+  width: 62px;
+  height: 2px;
+  left: 50%;
+  margin-left: -31px;
+  bottom: -19px;
+  background-color: #ff8b38;
+  display: inline-block;
+  text-align: center; }
 
-footer {
+.block_deskr {
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  text-align: center;
+  color: #86878b;
+  margin-bottom: 68px; }
+
+.awesome_box {
+  padding: 0;
+  margin: 0; }
+
+.awesome_item {
+  width: 33.3333%;
+  float: left;
+  padding: 0 10px; }
+
+.awesome_item_icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid #ff8b38;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #ff8b38;
+  /*  // font-size: $size; */
+  font-size: 2rem;
+  margin-bottom: 27px; }
+
+.awesome_item_title {
+  text-align: center;
+  font-family: "OpenSansBold";
+  /*  // font-size: $size; */
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 20px; }
+
+.awesome_item_text {
+  text-align: center;
+  color: #86878b;
+  /*  // font-size: $size; */
+  font-size: 0.875rem; }
+
+/* блок с ценами */
+.price_box {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.price_box_items {
+  width: 33.333%;
+  margin-right: 37px; }
+
+.price_popul {
+  padding: 14px 0;
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ff8b38;
+  text-transform: uppercase; }
+
+.price_box_items:last-child {
+  margin-right: 0; }
+
+.price_items_name {
+  font-family: "OpenSansBold";
+  /*  // font-size: $size; */
+  font-size: 1.25rem;
+  text-align: center;
+  border-bottom: 1px solid #fff;
   padding: 20px 0;
-  background-color: #000;
+  background-color: #333333;
   color: #fff; }
 
-.polit_list li.adress span {
+.price_items_price {
+  background-color: #333333;
+  padding: 23px 0 0 0;
+  text-align: center;
+  /*  // font-size: $size; */
+  font-size: 5.875rem;
+  color: #fff; }
+
+.price_items_price span {
+  /*  // font-size: $size; */
+  font-size: 2.1875rem; }
+
+.price_terms {
+  font-style: italic;
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  margin-top: 27px;
+  padding-bottom: 17px; }
+
+.price_terms_b {
+  border-bottom: 5px solid #ff8b38; }
+
+.price_items_termes {
+  padding: 0;
+  margin: 0;
+  background-color: #fff; }
+
+.price_termes_line {
+  text-align: center;
+  color: #86878b;
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  text-transform: uppercase;
+  padding: 14px 0;
+  border-bottom: 1px solid #f5f5f5; }
+
+.price_termes_link {
+  display: block;
+  text-align: center;
+  padding: 14px 0;
+  font-family: "OpenSansSemiBold", sans-serif;
+  background-color: #ff8b38;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.price_termes_link:hover {
+  color: #000; }
+
+/* блок отзывов  */
+.adwise_block {
+  padding: 0;
+  margin: 0; }
+
+.adwise_item {
+  width: 30%;
+  margin-right: 3.333%;
+  float: left; }
+
+.adwise_item:last-child {
+  margin-right: 0; }
+
+.adwise_text {
+  background-color: #f5f5f5;
+  color: #86878b;
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  padding: 20px 10px;
+  position: relative;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+
+.adwise_text:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 18px solid #f5f5f5;
+  left: 20px;
+  top: 100%; }
+
+.adwise_autor_box {
+  margin-top: 30px; }
+
+.adwise_autor_foto, .adwise_autor_foto img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+
+.adwise_autor_texting {
+  float: left;
+  padding-left: 5px;
+  display: table;
+  height: 70px; }
+
+.adwise_autor_tex {
+  display: table-cell;
+  vertical-align: middle;
+  /*  // font-size: $size; */
+  font-size: 1.125rem;
+  color: #333333;
+  font-family: "OpenSansBold", sans-serif; }
+
+.adwise_autorproff {
+  color: #86878b;
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
   display: block;
   font-weight: normal; }
 
-li.adress {
-  list-style: none; }
+/*
+небольшой блок с кнопкой
+заказа через всплывающую форму обратной связи
 
-.footer_box {
-  width: 33.3333%;
-  float: left; }
 
-.footer_box ul {
-  list-style-type: none; }
+ */
+.buttons_fon {
+  background: #000 url("../images/header-pic.jpg") center center no-repeat;
+  min-height: 320px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  text-align: center; }
 
-.footer_box ul li a {
+.buttons_fon:before {
+  position: absolute;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }
+
+.buttons_fon .block_title h2,
+.buttons_fon .block_deskr {
   color: #fff;
-  text-decoration: none;
+  position: relative; }
+
+.buttons_fon .block_title:before {
+  background-color: #fff; }
+
+.button_inslide {
+  display: inline-block;
+  padding: 12px 22px;
+  text-align: center;
+  border: 2px solid #fff;
+  color: #fff;
+  position: relative;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-.footer_box ul li a:hover {
-  text-decoration: underline; }
+.button_inslide:hover {
+  color: #ff8b38;
+  border: 2px solid #ff8b38; }
 
-/*стили кнопки наверх*/
-.top {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
-  background-color: #eba35d;
-  cursor: pointer;
+/* оформление футера */
+footer {
+  background-color: #000;
+  padding: 20px 0; }
+
+.footer-copy {
   text-align: center;
-  opacity: .3;
-  z-index: 3;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  color: white; }
+  /*  // font-size: $size; */
+  font-size: 0.75rem;
+  color: #fff; }
 
-.top .button_up {
-  color: #eba35d;
-  font-size: 1rem;
+/* оформление табов */
+.jq-tab-menu .jq-tab-title {
+  background: #333333;
+  color: #fff;
   border: 0;
-  padding: 5px 10px;
-  cursor: pointer; }
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
-.top:hover {
-  opacity: 1; }
+.jq-tab-menu .jq-tab-title.active, .jq-tab-menu .jq-tab-title:hover {
+  background: #ff8b38;
+  border-left: 0; }
 
-.top.active {
-  bottom: -60px; }
+.jq-tab-content {
+  display: none;
+  padding: 0 20px; }
 
+.content_tabs_block {
+  padding: 0;
+  margin: 0; }
+
+.content_tabs_left {
+  float: left;
+  width: 70%;
+  padding: 0 70px 0 30px; }
+
+.content_tabs_right {
+  float: left;
+  width: 30%; }
+
+.content_tabs_left p {
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  color: #86878b;
+  margin-bottom: 27px; }
+
+.content_tabs_left h2 {
+  font-family: "OpenSansBold", sans-serif;
+  /*  // font-size: $size; */
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 60px; }
+
+a.content_tabs_button {
+  display: inline-block;
+  padding: 15px 25px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-align: center;
+  background-color: #ff8b38;
+  color: #fff;
+  /*  // font-size: $size; */
+  font-size: 0.9375rem;
+  font-family: "OpenSansSemiBold", sans-serif;
+  -webkit-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+a.content_tabs_button:hover {
+  color: #000; }
+
+/* // задать все переменные
+ */
+/* p {
+  @include font-size(20px);
+ } */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
 /*все переменные и моды */
-/*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
 /* стили формы обратной связи */
 .forms-call {
-  font-size: .875rem; }
+  width: 360px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  overflow: hidden; }
+
+.forms-call h3 {
+  padding: 20px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+  /*  // font-size: $size; */
+  font-size: 1.25rem;
+  color: #333333; }
+
+.forms-call h3 span {
+  color: #ff8b38;
+  text-transform: uppercase; }
 
 .forms-call label {
   margin: 10px 0;
   display: block; }
 
-.forms-call input {
-  display: block;
+.forms-call input[type=submit] {
   width: 100%;
-  height: 40px;
-  font-size: 0.938rem;
-  line-height: 40px;
-  border: 1px solid #000;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  font-family: "OpenSansSemiBold",sans-serif;
+  /*  // font-size: $size; */
+  font-size: 0.9375rem;
+  text-align: center;
+  background-color: #ff8b38;
+  border: 0;
+  outline: 0;
+  padding: 20px 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: #fff;
+  margin-top: 47px; }
+
+.forms-call input[type=text],
+.forms-call input[type=email],
+.forms-call input[type=password] {
+  display: block;
+  width: 300px;
+  margin: 30px auto 0;
+  height: 32px;
+  /*  // font-size: $size; */
+  font-size: 0.875rem;
+  line-height: 32px;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  color: #000000;
+  /* border:1px solid $button-hover; */
   text-indent: 10px;
-  margin: 10px auto;
-  color: #000; }
+  /* // color:$button-hover;
+ */ }
 
 .forms-call input:focus {
-  border: 1px solid #eba35d; }
-
-.forms-call .get-buttons {
-  /* margin: 10px 0 10px 5px;
- */
- width: 100%;
-  background-color: #f2001D;
-  height: 45px;
-  line-height: 45px;
-  border-radius: 3px;
-  font-size: 1rem;
-  text-decoration: none;
-  border: 0;
-  color: #fff;
-  letter-spacing: 1px;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease; }
+  border: none;
+  border-bottom: 1px solid #f05d72; }
 
 .button-call {
-/*   text-align: right; */
+  text-align: right;
   margin: 0;
-  float: none; }
+  float: right; }
 
-.forms-call .get-buttons:focus,
-.forms-call .get-buttons:hover,
-.forms-call .get-buttons:active {
-  background-color: #e58930; }
-
-/* конец формы обратной связи */
 /*оформление всплывающей формы а ниже и благодарности */
 .forms-calldecor {
   max-width: 480px;
   position: relative;
+  border: 2px solid  #f5f5f5;
   background-color: rgba(255, 255, 255, 0.99);
   -webkit-transition: all 0.5s ease;
   -webkit-transition: all 0.5s else;
@@ -3173,23 +4621,27 @@ li.adress {
   transition: all 0.5s else;
   overflow: hidden;
   margin: auto;
-  border: 1px solid #fff;
   -webkit-border-radius: 10px;
-          border-radius: 10px; }
+          border-radius: 10px;
+  /* border: 1px solid $button-hover; */ }
 
 .forms-calldecor img {
   width: 100%;
   height: auto; }
 
 .forms-calldecor h4 {
-  color: #000;
+  /* color: $button-hover; */
   text-align: center;
-  font-size: 30px;
-  margin: 30px 0 40px 0; }
+  margin-bottom: 30px;
+  background-color: #f5f5f5;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #333333;
+  padding: 20px 0; }
 
 .forms-calldecor input {
   width: 90%;
-  color: #333333; }
+  /* color:lighten($button-hover, 20%); */ }
 
 .forms-calldecor .button-call {
   float: none;
@@ -3197,11 +4649,36 @@ li.adress {
   color: #fff;
   margin-bottom: 20px; }
 
+.forms-calldecor .button-call .get-buttons {
+  display: inline-block;
+  background-color: #ff8b38;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  padding: 15px 25px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  /*  // font-size: $size; */
+  font-size: 0.9375rem;
+  color: #fff;
+  font-family: "OpenSansSemiBold", sans-serif;
+  -webkit-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.forms-calldecor .button-call .get-buttons:hover,
+.forms-calldecor .button-call .get-buttons:active {
+  color: #ffffe4; }
+
 .forms-calldecor .mfp-close {
   position: absolute;
-  right: 15px;
-  font-size: 30px;
-  top: 15px;
+  right: -8px;
+  /*  // font-size: $size; */
+  font-size: 1.875rem;
+  top: -6px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   -webkit-transition: all .75s ease;
@@ -3231,7 +4708,7 @@ li.adress {
 
 .forms-calldecor .success {
   color: #fff;
-  background-color: #7cc15a;
+  /* background-color: $button-hover; */
   position: absolute;
   z-index: 1;
   left: 0;
@@ -3280,6 +4757,7 @@ li.adress {
   margin: auto;
   text-align: center; }
 
+/* // долюно работать анимация всплывашки */
 /* overlay at start */
 .mfp-fade.mfp-bg {
   opacity: 0;
@@ -3316,18 +4794,157 @@ li.adress {
   -ms-transform: translateY(-120%);
   transform: translateY(-120%); }
 
+.footer_fob {
+  width: 100%; }
+
+.forms-call input[type=text],
+.forms-call input[type=email],
+.forms-call input[type=password] {
+  width: 90%;
+  margin: 30px auto; }
+
+.forms-call textarea.messege {
+  height: 157px;
+  width: 90%;
+  margin: 30px auto 0;
+  font-size: 0.875rem;
+  font-family: "OpenSansRegular", sans-serif;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  color: #bdbdbd;
+  resize: none;
+  overflow: hidden;
+  text-indent: 10px; }
+
+.forms-call textarea.messege:focus::-webkit-input-placeholder {
+  text-indent: -30%;
+  -webkit-transition: text-indent 0.53s ease;
+  -o-transition: text-indent 0.53s ease;
+  transition: text-indent 0.53s ease; }
+
+#contact .forms-call {
+  border: 0;
+  outline: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  text-align: center;
+  /* width: 100%; */ }
+
+#contact .forms-call input[type=submit] {
+  width: 25%;
+  display: inline-block;
+  -webkit-box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 0; }
+
+:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+:focus::-moz-placeholder {
+  color: transparent; }
+
+:focus:-moz-placeholder {
+  color: transparent; }
+
+:focus:-ms-input-placeholder {
+  color: transparent; }
+
+/* :-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+:-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+:focus::-webkit-input-placeholder {text-indent: 110%; transition: text-indent 0.3s ease;}
+:focus::-moz-placeholder          {text-indent: 110%; transition: text-indent 0.3s ease;}
+:focus:-moz-placeholder           {text-indent: 110%; transition: text-indent 0.3s ease;}
+:focus:-ms-input-placeholder      {text-indent: 110%; transition: text-indent 0.3s ease;} */
+/* // задать все переменные
+ */
+/* p {
+  @include font-size(20px);
+ } */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include trans;
+ } */
+/* // как использовать */
+/* p {
+  @include font-size(20px);
+ } */
+/*
+как перевести размеры контейнеров из пикселей
+в rem */
+/* .divigin {
+  width: pxrem(30px);
+} */
+/* как использовать
+.nameclass {
+ @include triangle(25px, up, red);
+  @include triangle(25px, down, red);
+   @include triangle(100px, left, red);
+    @include triangle(100px, right, red);
+}
+ */
+/* как использовать
+.nameclass {
+ @include trianglelong(25px,40px, up, red);
+ @include trianglelong(25px,40px, down, red);
+ @include trianglelong(25px,40px, left, red);
+ @include trianglelong(25px,40px, right, red);
+
+}
+ */
+/* как создать треугольник легкий способ */
+/* как использовать
+.nameclass {
+ @include trianglelight(25px, 25px, up, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, dawn, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, left, 50px, 50px, #0489B1);
+@include trianglelight(25px, 25px, right, 50px, 50px, #0489B1);
+
+ */
+/* как использовать
+.nameclass {
+ @include triangle_in_corner(25px, topleft, red);
+    @include triangle_in_corner(100px, topright, red);
+
+ @include triangle_in_corner(25px, bottomleft, red);
+  @include triangle_in_corner(25px, bottomright, red);
+
+}
+ */
 /*все переменные и моды */
+/*  width: $block_width - ( 5px * 2 ) - ( 1px * 2 ); */
+/* как сделать миксинг */
+/*  @mixin large-text {
+   font: {
+     family: Arial;
+     size: 20px;
+    weight: bold;
+   }
+  color: #ff0000;
+ } */
+/* как использовать миксинг */
+/*  .page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+ } */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
 @media only screen and (max-width: 1190px) {
   .container {
     width: 1170px; } }
 
 @media screen and (max-width: 1080px) {
   .container {
-    width: 1060px; }
-  header h1 {
-    font-size: 1.525rem; }
-  header h2 {
-    font-size: 1.3rem; } }
+    width: 1060px; } }
 
 @media only screen and (max-width: 1024px) {
   .container {
@@ -3339,32 +4956,32 @@ li.adress {
 
 @media only screen and (max-width: 800px) {
   .container {
-    width: 780px; }
-  .block_cover, .block_text {
-    float: none;
-    width: 100%; }
-  .list {
-    margin: 0 40px; }
-  .block_cover_autor {
-    padding-right: 0; }
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 0; }
-  .block_cover img {
-    width: 82%; }
-  .top, .top .button_up {
-    font-size: .7rem; } }
+    width: 780px; } }
 
 @media only screen and (max-width: 768px) {
   .container {
-    width: 750px; } }
+    width: 750px; }
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+@media only screen and (max-width: 736px) {
+  .container {
+    width: 716px; } }
 
 @media only screen and (max-width: 667px) {
   .container {
-    width: 647px; }
-  .footer_box {
-    width: 100%;
-    float: none; } }
+    width: 647px; } }
 
 @media only screen and (max-width: 640px) {
   .container {
@@ -3372,45 +4989,19 @@ li.adress {
 
 @media only screen and (max-width: 600px) {
   .container {
-    width: 580px; }
-  .top, .top .button_up {
-    font-size: 0.556rem; } }
+    width: 580px; } }
 
 @media only screen and (max-width: 568px) {
   .container {
-    width: 548px; }
-  .button-call {
-    text-align: center;
-    margin: 0;
-    float: none; }
-  .block {
-    padding: 10px 0; } }
+    width: 548px; } }
 
 @media only screen and (max-width: 480px) {
   .container {
-    width: 460px; }
-  header h1 {
-    font-size: 1.30rem; }
-  header h2 {
-    font-size: 1.15rem; }
-  h3 {
-    font-size: 1.4rem; }
-  .block_text p {
-    font-size: 1.18rem; }
-  .top {
-    padding-top: 5px;
-    line-height: 0.556rem;
-    height: 45px; }
-  .top .button_up {
-    margin-top: 5px; } }
+    width: 460px; } }
 
 @media only screen and (max-width: 425px) {
   .container {
-    width: 405px; }
-  header h1 {
-    font-size: 1.16rem; }
-  h3 {
-    font-size: 1.26rem; } }
+    width: 405px; } }
 
 @media only screen and (max-width: 384px) {
   .container {
@@ -3418,21 +5009,7 @@ li.adress {
 
 @media only screen and (max-width: 360px) {
   .container {
-    width: 340px; }
-  header h1 {
-    font-size: 1.3rem; }
-  header h2 {
-    font-size: 0.90rem; }
-  h3 {
-    font-size: 1.27rem; }
-  .block_text p {
-    font-size: 1.00rem; }
-  .list li {
-    font-size: 1.00rem; }
-  .block_list h3 {
-    font-size: 1.04540rem; }
-  .block {
-    padding: 8px 0; } }
+    width: 340px; } }
 
 @media only screen and (max-width: 320px) {
   .container {
