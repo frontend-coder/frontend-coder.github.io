@@ -4135,17 +4135,15 @@ content: '\f095';
   color: #fff; }
 
 .price-button {
-  padding: 25px 0; }
+  padding: 25px 0;
+  text-align: center; }
 
 .price-button a {
-  margin: 0 auto;
-  display: block;
+  display: inline-block;
   -webkit-border-radius: 5px;
           border-radius: 5px;
+  padding: 10px 35px;
   font-size: 1em;
-  width: 210px;
-  height: 50px;
-  line-height: 50px;
   background-color: #e8776b;
   text-align: center;
   color: #fff;
@@ -4552,38 +4550,96 @@ p.iner-text {
   margin: auto;
   text-align: center; }
 
-/* overlay at start */
-.mfp-fade.mfp-bg {
-  opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+/*====== "Hinge" close effect ======*/
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  20%, 60% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  40% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  80% {
+    -webkit-transform: rotate(60deg) translateY(0);
+            transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  100% {
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+    opacity: 0; } }
+@keyframes hinge {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  20%, 60% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  40% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  80% {
+    -webkit-transform: rotate(60deg) translateY(0);
+            transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+  100% {
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+    opacity: 0; } }
 
-/* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready {
+.hinge {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: hinge;
+          animation-name: hinge; }
+
+.mfp-with-fade .mfp-content, .mfp-with-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+  transition: opacity .5s ease-out; }
+
+.mfp-with-fade.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-with-fade.mfp-ready.mfp-bg {
   opacity: 0.8; }
 
-/* overlay animate out */
-.mfp-fade.mfp-bg.mfp-removing {
+.mfp-with-fade.mfp-removing.mfp-bg {
   opacity: 0; }
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-  left: 100%;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-/* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-  left: 0; }
-
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-  left: 100%; }
 
 /* // задать все переменные
  */
@@ -4711,103 +4767,91 @@ content: '\f095';
 /* ниже размещено стили оформления наполнения шаблона в
 зависимостиь от разрешения, в документ были вклюены все разрешения
 не зависомо от требования заказчика  */
-/* первое разрешение под казачика */
-@media only screen and (max-width: 768px) {
-  .mobile_gamburger {
-    display: block; }
-  .top_line_menu {
-    display: none; }
-  .header_content_item {
-    width: 100%;
-    float: none; }
-  .header_img:before {
-    display: none; }
-  .header_content_item:last-child {
-    width: 100%; }
-  /*конец оформления кнопки  меню*/
-  .top_mnu {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(40, 40, 38, 0.8);
-    z-index: 50;
-    right: 0;
-    top: -100%;
-    /* display: flex;
-justify-content: center;
-align-items: center; */ }
-  /* .top_mnu.active {
-top: 0;
-} */
-  .top_mnu ul {
-    /*   margin-top: 120px; */
-    text-align: center;
-    width: 100%; }
-  .top_mnu ul li {
-    margin: 0;
-    padding: 0; }
-  .top_mnu ul li a {
-    display: block;
-    font-family: "RobotoMedium", sans-serif;
-    text-align: center;
-    font-size: 1.5rem;
-    line-height: 1.2;
-    padding: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-  .top_mnu ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #FF8941; }
-  /*оформление скрытого меню*/
-  .hidden-mnu {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    min-width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1; }
-  .hidden-mnu ul {
-    margin: 0;
-    padding: 0; }
-  .hidden-mnu ul li {
-    display: block;
-    margin: 0;
-    padding: 0; }
-  .hidden-mnu ul li a {
-    display: block;
-    text-align: center;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    line-height: 1.5;
-    padding: 20px 0;
-    color: #fff;
-    -webkit-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-  .hidden-mnu ul li a:hover {
-    /* background-color:rgba(40, 40, 38, 0.60); */
-    color: #FF8941; }
-  .top_line_box, .top_line {
-    height: 80px; }
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    animation: none !important; } }
+/*важное разрешение 1280 */
+/*важное разрешение 1080*/
+@media screen and (max-width: 1080px) {
+  .top-header {
+    background-position: 88% bottom, top center; } }
 
+/*важное разрешение 1024 */
+@media only screen and (max-width: 1024px) {
+  .block-mac .rision-text {
+    margin-left: 10px; } }
+
+/*важное разрешение 800 */
+@media only screen and (max-width: 800px) {
+  .header-text {
+    margin: 9% 0 39% 0; }
+  .wells {
+    text-align: center;
+    margin-bottom: 20px; }
+  .well-button {
+    text-align: center; }
+  .well-button a {
+    display: inline-block;
+    padding: 18px 35px; }
+  .block-mac .rision-title {
+    margin-top: 20px; }
+  .price {
+    margin-bottom: 20px; }
+  p.iner-text {
+    padding: 0;
+    margin-left: 200px;
+    font-size: 1.0em; }
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 0px; } }
+
+/*важное разрешение 768 */
 /* end  (max-width: 768px) */
+/*важное разрешение 600 */
+@media only screen and (max-width: 600px) {
+  .header-button {
+    margin: 0 4px; }
+  .header-text {
+    margin: 9% 0 50% 0; }
+  .top-header {
+    background-position: 94% bottom, top center; }
+  .header-deskr {
+    font-size: 1.07em; }
+  .block-padd {
+    padding: 40px 0; } }
+
+/*важное разрешение 480 */
+@media only screen and (max-width: 480px) {
+  .top-header {
+    min-height: 520px;
+    -webkit-background-size: 227px 282px, cover;
+            background-size: 227px 282px, cover; }
+  .header-deskr {
+    font-size: 1.250em;
+    margin-bottom: 49px; }
+  .header-deskr {
+    font-size: 1.15em; }
+  .rision-title {
+    margin: 10px 0 20px 0; }
+  .rision-ico {
+    margin: 7px auto 20px auto; }
+  .wells {
+    font-size: 1.4500em; }
+  .well-button a {
+    font-size: 1.00em;
+    padding: 11px 35px; }
+  .inner-test > img {
+    float: none;
+    margin: 0 auto; }
+  p.iner-text {
+    padding: 0;
+    margin-left: 0; }
+  .block-one-example {
+    margin: 0 0 30px 0; }
+  .form-calling {
+    margin-top: 0px; }
+  .forms-calldecor {
+    max-width: 460px; }
+  .forms-calldecor h5 {
+    margin-bottom: 18px; }
+  .forms-calldecor input {
+    height: 35px;
+    line-height: 35px; } }
 
 /*# sourceMappingURL=main.min.css.map */
