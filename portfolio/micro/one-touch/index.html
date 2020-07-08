@@ -1,219 +1,241 @@
 <!DOCTYPE html>
-		<html lang="ru">
-			<head>
-				<meta charset="utf-8">
-				<title>Шаблон One Touch</title>
-				<meta name="description" content="">
-				<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<link rel="shortcut icon" href="images/favicon/favicon.ico">
-				<style type="text/css">
-					@charset "UTF-8";body{margin:0px 0px 0px 0px}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{width:100%}.col-md-2,.col-lg-2,.col-sm-3,.col-xs-6,.col-sm-9,.col-md-10,.col-lg-10,.col-xs-12{position:relative;min-height:1px}.col-xs-6,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-6{width:50%}@media (min-width:768px){.col-sm-3,.col-sm-9{float:left}.col-sm-9{width:75%}.col-sm-3{width:25%}}@media (min-width:992px){.col-md-2,.col-md-10{float:left}.col-md-10{width:83.33333333%}.col-md-2{width:16.66666667%}}@media (min-width:1200px){.col-lg-2,.col-lg-10{float:left}.col-lg-10{width:83.33333333%}.col-lg-2{width:16.66666667%}}.clearfix:before,.clearfix:after,.container:before,.container:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.row:after{clear:both}.hidden{display:none!important}@-ms-viewport{width:device-width}@media (max-width:767px){.hidden-xs{display:none!important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none!important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none!important}}@media (min-width:1200px){.hidden-lg{display:none!important}}@font-face{font-family:'FontAwesome';src:url("../app/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0");src:url("../app/fonts/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),url("../app/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),url("../app/fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"),url("../app/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),url("../app/fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-quote-right:before{content:""}.fa-long-arrow-down:before{content:""}button::-moz-focus-inner{padding:0;border:0}.owl-carousel{display:none;width:100%;position:relative;z-index:1}@charset "UTF-8";*::-webkit-input-placeholder{color:#202020;opacity:1}*:-moz-placeholder{color:#202020;opacity:1}*::-moz-placeholder{color:#202020;opacity:1}*:-ms-input-placeholder{color:#202020;opacity:1}*,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;outline:none;padding:0;margin:0}@font-face{font-family:"OpenSansBold";src:url("../app/fonts/OpenSansBold/OpenSansBold.eot");src:url("../app/fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"),url("../app/fonts/OpenSansBold/OpenSansBold.woff") format("woff"),url("../app/fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");font-style:normal;font-weight:normal}@font-face{font-family:"OpenSansLight";src:url("../app/fonts/OpenSansLight/OpenSansLight.eot");src:url("../app/fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"),url("../app/fonts/OpenSansLight/OpenSansLight.woff") format("woff"),url("../app/fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");font-style:normal;font-weight:normal}@font-face{font-family:"OpenSansRegular";src:url("../app/fonts/OpenSansRegular/OpenSansRegular.eot");src:url("../app/fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"),url("../app/fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),url("../app/fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");font-style:normal;font-weight:normal}@font-face{font-family:"OpenSansSemiBold";src:url("../app/fonts/OpenSansSemiBold/OpenSansSemiBold.eot");src:url("../app/fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"),url("../app/fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),url("../app/fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");font-style:normal;font-weight:normal}html{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;font-size:16px;line-height:1.6;margin:0;padding:0;-webkit-backface-visibility:hidden}body{font-family:"OpenSansRegular",sans-serif;font-size:16px;line-height:1.6;position:relative;min-width:320px;height:100%;margin:0;padding:0;color:#5b5f64;opacity:1;-webkit-backface-visibility:hidden;-webkit-font-smoothing:antialised;overflow-x:hidden}h1,h3,h4,h5{margin:0;padding:0}a{outline:0;text-decoration:none}ul{margin:0;padding:0}li{list-style-type:none}.hidden{display:none}.header_img{background:#000 url("../app/images/header-pic.jpg") top center no-repeat;min-height:100vh;background-attachment:fixed;-webkit-background-size:cover;background-size:cover;position:relative}.header_img:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.6)}.top-line{width:100%;z-index:200;position:fixed;height:100px;background-color:rgba(0,0,0,0.6);text-align:center}.logo{font-family:"OpenSansSemiBold",sans-serif;font-size:23px;line-height:26px;letter-spacing:1px;margin-top:37px;color:#fff}.logo span{color:#DC143C}.top-menu{font-family:"OpenSansBold",sans-serif;text-align:right;margin:33px 0}.top-menu ul{padding:0;list-style-type:none;font-size:0}.top-menu ul li{display:inline-block}.top-menu ul li a{text-align:center;font-size:14px;line-height:20px;display:block;padding:10px 20px;text-decoration:none;text-transform:uppercase;color:#fff}.hidden-mnu{display:block;top:3px;border-top:1px solid #fff;min-width:100%;position:absolute;background-color:rgba(0,0,0,0.8);left:0;right:0;z-index:1;display:none}.hidden-mnu ul li{display:block;width:100%;margin:0;padding:0}.hidden-mnu ul li a{display:block;background-color:rgba(0,0,0,0.5);text-align:center;line-height:1.5;font-size:1rem;padding:30px 0;color:#DC143C}.toggle-mnu{float:right;color:#000;position:absolute;right:10px;top:0;text-align:center;line-height:48px}.toggle-mnu{display:block;width:28px;height:28px;margin-top:20px;margin-right:15px}.toggle-mnu span:after,.toggle-mnu span:before{content:"";position:absolute;left:0;top:9px}.toggle-mnu span:after{top:18px}.toggle-mnu span{position:relative;display:block}.toggle-mnu span,.toggle-mnu span:after,.toggle-mnu span:before{width:100%;height:2px;background-color:#fff;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-border-radius:2px;border-radius:2px}.title-header{padding:30% 0;color:#fff}.title-header h1,.title-header h3{text-align:left;letter-spacing:1px;width:51%}.title-header h1{font-family:"OpenSansBold",sans-serif;font-size:28px;line-height:37px;text-transform:uppercase;margin-bottom:20px}.title-header h3{font-family:"OpenSansLight",sans-serif;font-size:22px;line-height:31px;text-transform:uppercase}.calling-me{text-align:left;margin-top:60px}.calling-me ul{list-style-type:none}.calling-me ul li{display:inline-block}.calling-me a{display:inline-block;color:#DC143C;padding:10px 50px;font-size:1.4em;letter-spacing:2px;-webkit-border-radius:10px;border-radius:10px;text-decoration:none;border:1px solid #DC143C}.inner-test{text-align:center;background-color:#fff}.inner-test img{max-width:128px;margin:0 auto 15px}h3.city-name{padding:10px 0;font-size:14px;font-size:.8em;font-weight:900;line-height:20px;color:#DC143C;text-align:left;margin-left:30px}p.text-testimonial{padding:10px 0 5px;font-size:16px;letter-spacing:1px;line-height:35px}.inner-test{text-align:center;background-color:#fff;border-left:3px solid #DC143C}.inner-test img{max-width:160px;max-height:160px;float:left;-webkit-border-radius:10em;border-radius:10em;margin:10px 5px 30px 20px}.inner-test-cont{margin-left:220px}p.text-testimonial{text-align:left;color:#626262;line-height:2}.text-testimonial i{margin-right:5px;color:#DC143C}.forms-call{font-size:.875em}.forms-call label{margin:10px 0;display:block}.forms-call input,.forms-call textarea{display:block;width:100%;height:60px;line-height:60px;font-size:0.938em;border:none;border-bottom:1px solid red;text-indent:10px;margin:10px auto;color:#364052}.forms-call textarea{height:150px;width:100%;resize:none;overflow:hidden}.forms-calldecor input{height:40px;line-height:40px}.forms-calldecor textarea{height:100px}.forms-calldecor .button-call .get-buttons{margin-top:10px;line-height:1}.forms-call .get-buttons{margin-top:50px;padding:10px 50px;font-size:18px;border:1px solid #DC143C;text-decoration:none;background-color:#DC143C;-webkit-border-radius:3px;border-radius:3px;color:#fff}.button-call{text-align:center;margin:0;float:left}.forms-calldecor{max-width:480px;position:relative;background-color:rgba(0,0,0,0.5);overflow:hidden;margin:auto;border:1px solid #fff;-webkit-border-radius:1em;border-radius:1em}.forms-calldecor h4,.forms-calldecor h5{color:#fff;text-align:center;font-size:1.3em;margin:50px 20px 0}.forms-calldecor h5{margin-bottom:30px;margin-top:10px;font-size:0.96em;letter-spacing:1px}.forms-calldecor input,.forms-calldecor textarea{width:90%;color:white}.forms-calldecor .button-call{float:none;text-align:center;color:#fff;margin-bottom:40px}.forms-calldecor .success{background-color:#000;position:absolute;z-index:1;left:0;top:-100%;width:100%;height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;opacity:0;padding-right:20px;padding-left:20px}.forms-calldecor .success p{text-transform:uppercase;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;color:#fff;font-size:20px;margin:auto;text-align:center}@media (min-width:737px){.container{width:100%;margin:0 auto}}@media (min-width:768px){.container{width:750px;margin:0 auto}}@media (min-width:800px){.container{width:780px;margin:0 auto}}@media (min-width:992px){.container{width:970px;margin:0 auto}}@media (min-width:1024px){.container{width:1004px;margin:0 auto}}@media screen and (min-width:1080px){.container{width:1060px;margin:0 auto}}@media only screen and (min-width:1190px){.container{width:1170px;margin:0 auto}}@media only screen and (min-width:1200px){.container{width:1170px;margin:0 auto}}@media only screen and (max-width:1190px){.toggle-mnu{margin-top:39px;margin-right:24px}}@media screen and (max-width:1080px){.title-header h1,.title-header h3{width:54%}}@media only screen and (max-width:1024px){.title-header h1,.title-header h3{width:69%}}@media only screen and (max-width:800px){.title-header h1{font-size:25px}.title-header h3{font-size:20px}.forms-call input,.forms-call textarea{font-size:1.10em}}@media only screen and (max-width:600px){.title-header h1,.title-header h3{width:100%}.title-header{padding:45% 0}.inner-test-cont{margin-left:200px}}@media only screen and (max-width:568px){.inner-test img{float:none}.inner-test-cont{margin-left:10px}}@media only screen and (max-width:480px){p.text-testimonial{font-size:15px;line-height:25px}.hidden-mnu{top:-9px}.title-header h1{font-size:22px}.title-header h3{font-size:17px}.top-line{height:74px}.logo{margin-top:24px}.toggle-mnu{margin-top:24px}}@media only screen and (max-width:320px){.title-header h1{font-size:13px;line-height:1.5}.title-header h3{font-size:13px;line-height:1.5}.calling-me a{display:inline-block;color:#DC143C;padding:10px 20px;font-size:1.2rem}.hidden-mnu{top:-8px}p.text-testimonial{font-size:15px;line-height:20px}}
-				</style>
-				<link rel="preload" href="css/libs.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-				<noscript><link rel="stylesheet" href="css/libs.min.css"></noscript>
-				<link rel="preload" href="css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-				<noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
-				<script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
-			</head>
-			<body>
-				<header class="header_img" id="home">
-					<div class="top-line">
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
-									<div class="logo">
-										One<span>touch</span>
-										</div>
-									</div>
-									<div class="col-xs-6 col-sm-9 col-md-10 col-lg-10">
-										<div class="top-menu hidden-xs hidden-sm hidden-md">
-											<ul>
-												<li><a href="#home">Главная</a></li>
-												<li><a href="#about">О нас</a></li>
-												<li><a href="#services">Услуги</a></li>
-												<li><a href="#portfolio">Портфолио</a></li>
-												<li><a href="#contact">	Контакты</a></li>
-											</ul>
-										</div>
-										<a href="#" class="toggle-mnu hidden-lg">
-											<span></span>
-										</a>
-									</div>
-								</div>
-							</div>
-							<!--start hidden-mnu -->
-							<div class="col-xs-12">
-								<div class="top-menu hidden-mnu hidden-lg ">
-										<ul>
-												<li><a href="#home">Главная</a></li>
-												<li><a href="#about">О нас</a></li>
-												<li><a href="#services">Услуги</a></li>
-												<li>	<a href="#portfolio">Портфолио</a></li>
-												<li><a href="#contact">	Контакты</a></li>
-											</ul>
-								</div>
-								<!--end hidden-mnu -->
-							</div>
-							<!--end hcol-sm-12 col-xs-12 col-md-12 -->
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Шаблон One Touch</title>
+	<meta name="description" content="Это самый крутой шаблон для создания портфолио работ и услуг" />
+	<meta name="keywords" content="создать сайт с нуля, верстаю быстрые шаблоны">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Игорь Васильченко">
+	<meta name="copyright"
+		content="Все права на сайт и размещенные материалы в рамках данного проекта принадлежат Олегу Василенко">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" />
+
+</head>
+
+<body>
+	<header class="header_img" id="home">
+		<div class="top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+						<div class="logo">
+							One<span>touch</span>
 						</div>
-						<!--закрыл класс top-line -->
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="title-header">
-										<h1>Давайте создадим логотип для вас совместными усилиями</h1>
-										<h3>ничто не является трубным если кто-то из нас не достигает душевного равновесия</h3>
-
-										<div class="calling-me">
-											<ul>
-												<li><a href="#call-back" data-form="верхняя форма в хедере" data-text="Подайте заявку">напишите нам</a></li>
-												<li><a href="#about" id="linked"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
+					</div>
+					<div class="col-xs-6 col-sm-9 col-md-10 col-lg-10">
+						<div class="top-menu hidden-xs hidden-sm hidden-md">
+							<ul>
+								<li><a href="#home">Главная</a></li>
+								<li><a href="#about">О нас</a></li>
+								<li><a href="#services">Услуги</a></li>
+								<li><a href="#portfolio">Портфолио</a></li>
+								<li><a href="#contact"> Контакты</a></li>
+							</ul>
 						</div>
-					</header>
-
-<!-- блок about me -->
-<section class="block" id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div class="block-man">
-				</div>
-			</div>
-			<div class="col-md-8">
-				<div class="about-me-block">
-					<div class="about-me-title">Обо мне</div>
-					<div class="about-me-text">
-						Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Сбить запятой буквенных это строчка! Своих обеспечивает даль, ему выйти. Единственное, имени семантика своих там агенство своих если вопрос реторический семь деревни дороге одна свой строчка сбить всеми по всей которое пояс своего необходимыми, он рекламных использовало это маленькая! Букв всеми одна себя переулка составитель текстов там имени, осталось, буквоград скатился щеке напоивший города запятых это они, подпоясал несколько на берегу! Встретил, подзаголовок вопроса!
+						<a href="#" class="toggle-mnu hidden-lg">
+							<span></span>
+						</a>
 					</div>
 				</div>
 			</div>
+			<!--start hidden-mnu -->
+			<div class="col-xs-12">
+				<div class="top-menu hidden-mnu hidden-lg ">
+					<ul>
+						<li><a href="#home">Главная</a></li>
+						<li><a href="#about">О нас</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li> <a href="#portfolio">Портфолио</a></li>
+						<li><a href="#contact"> Контакты</a></li>
+					</ul>
+				</div>
+				<!--end hidden-mnu -->
+			</div>
+			<!--end hcol-sm-12 col-xs-12 col-md-12 -->
 		</div>
-	</div>
-</section>
+		<!--закрыл класс top-line -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="title-header">
+						<h1>Создадите логотип для вашего бизнеса
+							нашими усилиями</h1>
+						<h3 data-aos="fade-in" data-aos-delay="20" data-aos-duration="2000">ничто не доставит душевное равновесие,
+							если ваш клиент не
+							достигнет результата</h3>
 
-<section class="block block-fongrey" id="services">
-	<div class="container">
-		<div class="row">
-			<div class="about-me-title">наши услуги</div>
-			<div class="col-md-4">
-				<div class="service-block">
-					<div class="service-block-icon">
-						<i class="fa fa-clone fa-4x" aria-hidden="true"></i>
-					</div>
-					<div class="service-block-title">
-						ui/ux дизайн
-					</div>
-					<div class="service-block-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Речью знаках алфавит языкового букв вскоре.
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="service-block">
-					<div class="service-block-icon">
-						<i class="fa fa-line-chart fa-4x" aria-hidden="true"></i>
-					</div>
-					<div class="service-block-title">
-						аналитака
-					</div>
-					<div class="service-block-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Речью знаках алфавит языкового букв вскоре.
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="service-block">
-					<div class="service-block-icon">
-						<i class="fa fa-camera fa-4x" aria-hidden="true"></i>
-					</div>
-					<div class="service-block-title">
-						фотография
-					</div>
-					<div class="service-block-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Речью знаках алфавит языкового букв вскоре.
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- block portfolio -->
-<section class="block block-portfolio" id="portfolio">
-	<div class="container">
-		<div class="row">
-			<div class="about-me-title">портфолио</div>
-			<div class="col-md-4">
-				<div class="effect-boom effect-boom-blok">
-					<img src="images/work-1.jpg" alt="Divcon">
-					<div class="caption">
-						<h4>Divcon</h4>
-						<p>Web-designer</p>
-						<ul>
-							<li><a class="btn" href="images/work-1.jpg" title="Макет Divcon">
-								<i class="fa fa-search" aria-hidden="true"></i>	</a></li>
+						<div class="calling-me">
+							<ul>
+								<li data-aos="fade-up-right" data-aos-delay="40"><a href="#call-back" data-form="верхняя форма в хедере"
+										data-text="Подайте заявку">напишите нам</a>
+								</li>
+								<li data-aos="fade-up-left" data-aos-delay="60"><a href="#about" id="linked"><i
+											class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- блок about me -->
+	<section class="block" id="about">
+		<div class="container">
+			<div class="row">
 				<div class="col-md-4">
+					<div data-aos="fade-up-left" data-aos-duration="500" class="block-man">
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="about-me-block">
+						<h2 data-aos="fade-up-right" data-aos-delay="40" data-aos-duration="1500" class="about-me-title">Обо мне
+						</h2>
+						<div data-aos="fade-in" data-aos-delay="20" data-aos-duration="2000" class="about-me-text">
+							Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Сбить запятой
+							буквенных это строчка! Своих обеспечивает даль, ему выйти. Единственное, имени семантика своих там
+							агенство своих если вопрос реторический семь деревни дороге одна свой строчка сбить всеми по всей которое
+							пояс своего необходимыми, он рекламных использовало это маленькая! Букв всеми одна себя переулка
+							составитель текстов там имени, осталось, буквоград скатился щеке напоивший города запятых это они,
+							подпоясал несколько на берегу! Встретил, подзаголовок вопроса!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="block block-fongrey" id="services">
+		<div class="container">
+			<h2 data-aos="fade-up-left" data-aos-duration="500" class="about-me-title">наши услуги</h2>
+			<div class="row">
+
+				<div data-aos="fade-up-left" data-aos-delay="40" data-aos-duration="1000" class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service-block">
+						<div class="service-block-icon">
+							<i class="fa fa-clone fa-4x" aria-hidden="true"></i>
+						</div>
+						<div class="service-block-title">
+							ui/ux дизайн
+						</div>
+						<div class="service-block-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+							рыбные тексты. Речью знаках алфавит языкового букв вскоре.
+						</div>
+					</div>
+				</div>
+				<div data-aos="fade-up" data-aos-delay="40" data-aos-duration="1500" class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service-block">
+						<div class="service-block-icon">
+							<i class="fa fa-line-chart fa-4x" aria-hidden="true"></i>
+						</div>
+						<div class="service-block-title">
+							аналитака
+						</div>
+						<div class="service-block-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+							рыбные тексты. Речью знаках алфавит языкового букв вскоре.
+						</div>
+					</div>
+				</div>
+				<div data-aos="fade-up-right" data-aos-delay="40" data-aos-duration="2000" class="col-md-4 col-sm-6 col-xs-12">
+					<div class="service-block">
+						<div class="service-block-icon">
+							<i class="fa fa-camera fa-4x" aria-hidden="true"></i>
+						</div>
+						<div class="service-block-title">
+							фотография
+						</div>
+						<div class="service-block-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+							рыбные тексты. Речью знаках алфавит языкового букв вскоре.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- block portfolio -->
+	<section class="block block-portfolio" id="portfolio">
+		<div class="container">
+			<h2 data-aos="fade-up-left" data-aos-duration="500" class="about-me-title">портфолио</h2>
+			<div class="row">
+
+				<div data-aos="fade-up-left" data-aos-delay="40" data-aos-duration="1000" class="col-md-4 col-sm-6 col-xs-12">
 					<div class="effect-boom effect-boom-blok">
-						<img src="images/work-2.jpg" alt="Effect #10">
+						<img src="images/work-1.jpg" alt="Divcon" />
+						<div class="caption">
+							<h4>Divcon</h4>
+							<p>Web-designer</p>
+							<ul>
+								<li><a class="btn" href="images/work-1.jpg" title="Макет Divcon">
+										<i class="fa fa-search" aria-hidden="true"></i> </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div data-aos="fade-up" data-aos-delay="40" data-aos-duration="1500" class="col-md-4 col-sm-6 col-xs-12">
+					<div class="effect-boom effect-boom-blok">
+						<img src="images/work-2.jpg" alt="Effect #10" />
 						<div class="caption">
 							<h4>Kotoby</h4>
 							<p>Web-designer</p>
 							<ul>
-								<li><a class="btn" href="images/work-2.jpg" title="Макет Kotoby"><i class="fa fa-search" aria-hidden="true"></i>	</a></li>
+								<li><a class="btn" href="images/work-2.jpg" title="Макет Kotoby"><i class="fa fa-search"
+											aria-hidden="true"></i> </a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div data-aos="fade-up-right" data-aos-delay="40" data-aos-duration="2000" class="col-md-4 col-sm-6 col-xs-12">
 					<div class="effect-boom effect-boom-blok">
-						<img src="images/work-3.jpg" alt="My Touch">
+						<img src="images/work-3.jpg" alt="My Touch" />
 						<div class="caption">
 							<h4>My Touch</h4>
 							<p>Web-designer</p>
 							<ul>
-								<li><a class="btn" href="images/work-3.jpg" title="Макет My Touch"><i class="fa fa-search" aria-hidden="true"></i>	</a></li>
+								<li><a class="btn" href="images/work-3.jpg" title="Макет My Touch"><i class="fa fa-search"
+											aria-hidden="true"></i> </a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div data-aos="fade-up-left" data-aos-delay="40" data-aos-duration="1000" class="col-md-4 col-sm-6 col-xs-12">
 					<div class="effect-boom effect-boom-blok">
-						<img src="images/work-4.jpg" alt="DWpolis">
+						<img src="images/work-4.jpg" alt="DWpolis" />
 						<div class="caption">
 							<h4>DWpolis</h4>
 							<p>Web-designer</p>
 							<ul>
-								<li><a class="btn" href="images/work-4.jpg" title="Макет DWpolis"><i class="fa fa-search" aria-hidden="true"></i>	</a></li>
+								<li><a class="btn" href="images/work-4.jpg" title="Макет DWpolis"><i class="fa fa-search"
+											aria-hidden="true"></i> </a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div data-aos="fade-up" data-aos-delay="40" data-aos-duration="1500" class="col-md-4 col-sm-6 col-xs-12">
 					<div class="effect-boom effect-boom-blok">
-						<img src="images/work-5.jpg" alt="Photography">
+						<img src="images/work-5.jpg" alt="Photography" />
 						<div class="caption">
 							<h4>Photography</h4>
 							<p>Web-designer</p>
 							<ul>
-								<li><a class="btn" href="images/work-5.jpg" title="Макет Photography"><i class="fa fa-search" aria-hidden="true"></i>	</a></li>
+								<li><a class="btn" href="images/work-5.jpg" title="Макет Photography"><i class="fa fa-search"
+											aria-hidden="true"></i> </a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div data-aos="fade-up-right" data-aos-delay="40" data-aos-duration="2000" class="col-md-4 col-sm-6 col-xs-12">
 					<div class="effect-boom effect-boom-blok">
-						<img src="images/work-6.jpg" alt="CV-Portfolio">
+						<img src="images/work-6.jpg" alt="CV-Portfolio" />
 						<div class="caption">
 							<h4>CV-Portfolio</h4>
 							<p>Web-designer</p>
 							<ul>
-								<li><a class="btn" href="images/work-6.jpg" title="Макет CV-Portfolio"><i class="fa fa-search" aria-hidden="true"></i>	</a></li>
+								<li><a class="btn" href="images/work-6.jpg" title="Макет CV-Portfolio"><i class="fa fa-search"
+											aria-hidden="true"></i> </a></li>
 							</ul>
 						</div>
 					</div>
@@ -221,126 +243,130 @@
 			</div>
 		</div>
 	</section>
-<!-- Отзывы  -->
-<section class="block block-fongrey" id="carrousel">
-	<div class="container">
-		<div class="row">
-			<div class="about-me-title">отзывы</div>
-			<div class="col-md-12">
-				<div id="comand_carousel" class="owl-carousel owl-theme">
-					<div class="item">
-						<div class="inner-test clearfix">
-							<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
-							<div class="inner-test-cont">
-								<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! </p>
-								<h3 class="city-name">Владимир, Москва</h3>
+	<!-- Отзывы  -->
+	<section class="block block-fongrey" id="carrousel">
+		<div class="container">
+			<div class="row">
+				<h2 data-aos="fade-up-left" data-aos-duration="500" class="about-me-title">отзывы</h2>
+				<div class="col-md-12">
+					<div id="comand_carousel" class="owl-carousel owl-theme">
+						<div data-aos="fade-up-left" data-aos-delay="40" data-aos-duration="1000" class="item">
+							<div class="inner-test clearfix">
+								<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
+								<div class="inner-test-cont">
+									<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за
+										словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу
+										послушавшись, подзаголовок! </p>
+									<h3 class="city-name">Владимир, Москва</h3>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="item">
-						<div class="inner-test clearfix">
-							<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
-							<div class="inner-test-cont">
-								<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! </p>
-								<h3 class="city-name">Владимир, Москва</h3>
+						<div data-aos="fade-up-left" data-aos-delay="40" data-aos-duration="1000" class="item">
+							<div class="inner-test clearfix">
+								<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
+								<div class="inner-test-cont">
+									<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за
+										словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу
+										послушавшись, подзаголовок! </p>
+									<h3 class="city-name">Владимир, Москва</h3>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="item">
-						<div class="inner-test clearfix">
-							<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
-							<div class="inner-test-cont">
-								<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! </p>
-								<h3 class="city-name">Владимир, Москва</h3>
+						<div data-aos="fade-up-left" data-aos-delay="40" data-aos-duration="1000" class="item">
+							<div class="inner-test clearfix">
+								<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
+								<div class="inner-test-cont">
+									<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за
+										словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу
+										послушавшись, подзаголовок! </p>
+									<h3 class="city-name">Владимир, Москва</h3>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="item">
-						<div class="inner-test clearfix">
-							<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
-							<div class="inner-test-cont">
-								<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу послушавшись, подзаголовок! </p>
-								<h3 class="city-name">Владимир, Москва</h3>
+						<div data-aos="fade-up-left" data-aos-delay="40" data-aos-duration="1000" class="item">
+							<div class="inner-test clearfix">
+								<img src="images/client-1.jpg" class="full-opacity" alt="Клиент 1">
+								<div class="inner-test-cont">
+									<p class="text-testimonial"><i class="fa fa-quote-right" aria-hidden="true"></i>Далеко-далеко за
+										словесными горами в стране, гласных и согласных живут рыбные тексты. Рот последний на берегу
+										послушавшись, подзаголовок! </p>
+									<h3 class="city-name">Владимир, Москва</h3>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- контактная формра              -->
-<section class="block" id="contact">
-	<div class="container">
-		<div class="about-me-title">Контакты</div>
-		<div class="row">
-			<form class="forms-call">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<label class="first_label">
-						<input type="text" name="name" placeholder="Введите Ваше имя" required>
-					</label>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<label class="second_label">
-						<input id="phone_header" type="text" name="phone" placeholder="Введите номер Вашего телефона" required>
-					</label>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<label>
-						<textarea name="text" placeholder="Введите сообщение" rows="10" required></textarea>
-					</label>
-					<div class="button-call">
-						<button class="get-buttons">Отправить</button>
-						<input type="hidden" name="formaone" value="форма размещена в футере"></div>
+	</section>
+	<!-- контактная формра              -->
+	<section class="block" id="contact">
+		<div class="container">
+			<h2 data-aos="fade-up-left" data-aos-duration="500" class="about-me-title">Контакты</h2>
+			<div class="row">
+				<form class="forms-call">
+					<div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000" data-aos-offset="300"
+						class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<label class="first_label">
+							<input type="text" name="name" placeholder="Введите Ваше имя" required>
+						</label>
+					</div>
+					<div data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500" data-aos-offset="300"
+						class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<label class="second_label">
+							<input id="phone_header" type="text" name="phone" placeholder="Введите номер Вашего телефона" required>
+						</label>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<label>
+							<textarea data-aos="fade-up-right" data-aos-delay="700" data-aos-duration="2000" data-aos-offset="200"
+								name="text" placeholder="Введите сообщение" rows="10" required></textarea>
+						</label>
+						<div data-aos="fade-up-left" data-aos-delay="800" data-aos-duration="2500" class="button-call">
+							<button class="get-buttons">Отправить</button>
+							<input type="hidden" name="formaone" value="форма размещена в футере">
+						</div>
 					</div>
 				</form>
 			</div>
 		</div>
 	</section>
-					<footer>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<p>Copyright 2017. Все права защищены. Верстка: Олег Василенко.</p>
-								</div>
-							</div>
-						</div>
-					</footer>
-					<!--оформление скрытой всплывающей формы -->
-					<div class="hidden">
-						<form class="forms-call forms-calldecor" id="call-back">
-							<input type="hidden" name="admin-data">
-							<div class="success">
-								<p>наш менеджер свяжется с вами в течение 30 минут</p>
-							</div>
-							<h4>Заказать монтаж</h4>
-							<h5>наш менеджер свяжется с вами в течение 30 минут</h5>
-							<label>
-								<input type="text" name="name" placeholder="Введите Ваше имя" required></label>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Copyright 2017. Все права защищены. Верстка: Васильченко Игорь.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--оформление скрытой всплывающей формы -->
+	<div class="hidden">
+		<form class="forms-call forms-calldecor" id="call-back">
+			<input type="hidden" name="admin-data">
+			<div class="success">
+				<p>наш менеджер свяжется с вами в течение 30 минут</p>
+			</div>
+			<h4>Заказать монтаж</h4>
+			<h5>наш менеджер свяжется с вами в течение 30 минут</h5>
+			<label>
+				<input type="text" name="name" placeholder="Введите Ваше имя" required></label>
 
-								<label>
-									<input id="phone_key" type="text" name="phone" placeholder="Введите номер Вашего телефона" required></label>
+			<label>
+				<input id="phone_key" type="text" name="phone" placeholder="Введите номер Вашего телефона" required></label>
 
-									<label>
-										<textarea name="text" placeholder="Введите сообщение" rows="10" required></textarea>
-									</label>
+			<label>
+				<textarea name="text" placeholder="Введите сообщение" rows="10" required></textarea>
+			</label>
 
-									<div class="button-call">
-										<button class="get-buttons">Отправить</button>
-										<input type="hidden" name="formaone" value="форма размещена во всплывающем окне"></div>
-									</form>
-								</div>
+			<div class="button-call">
+				<button class="get-buttons">Отправить</button>
+				<input type="hidden" name="formaone" value="форма размещена во всплывающем окне"></div>
+		</form>
+	</div>
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<script src="js/scripts.min.js"></script>
 
-				<!--[if lt IE 9]>
-				<script src="libs/html5shiv/es5-shim.min.js"></script>
-				<script src="libs/html5shiv/html5shiv.min.js"></script>
-				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-				<script src="libs/html5shiv/respond.min.js"></script>
-				<![endif]-->
-				<script src="js/libs.min.js"></script>
-				<!-- Yandex.Metrika counter -->
-				<!-- /Yandex.Metrika counter -->
-				<!-- Google Analytics counter -->
-				<!-- /Google Analytics counter -->
-			</body>
-			</html>
+</body>
+
+</html>

@@ -2,429 +2,462 @@
 <html lang="ru">
 
 <head>
- <meta charset="utf-8" />
- <!-- <base href="/"> -->
- <title>Поиск страница</title>
- <meta name="description" content="" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
- <link rel="stylesheet" href="css/calculate.min.css" />
- <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+  <meta charset="utf-8" />
+  <!-- <base href="/"> -->
+  <title>Поиск страница</title>
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" />
 </head>
 
 <body>
-<span class="toggle-button">
-    <div class="menu-bar menu-bar-top"></div>
-    <div class="menu-bar menu-bar-middle"></div>
-    <div class="menu-bar menu-bar-bottom"></div>
-  </span>
+  <div class="top_menu_slider">
+    <div class="container">
+      <div class="row_person row_line_menu">
+        <div class="top_logo">
+          <img src="img/logo-construction.png" alt="логотип сайта">
+        </div>
+        <div class="top_menu">
+          <ul>
+            <li><a href="./">главная</a></li>
+            <li class="menu-item-has-children"><a href="./page.html">услуги</a>
+              <ul>
+                <li><a href="./page.html">первая услуга</a></li>
+                <li><a href="./page.html">вторая услуга</a></li>
+                <li><a href="./page.html">третья услуга</a></li>
+                <li><a href="./page.html">третья услуга</a></li>
+              </ul>
+            </li>
+            <li><a href="./calculate.html">калькулятор</a></li>
+            <li><a href="./category.html">блог</a></li>
+          </ul>
+        </div>
+        <div class="be-search">
+          <div class="searchbutton">
+          </div>
+          <div class="search-form">
+            <form action="/search" class="searchform" method="get">
+              <input class="searchbar" name="s" placeholder="Введите запрос" type="text">
+              <input class="searchsubmit" type="submit" value="Найти">
+            </form>
+          </div>
+        </div>
+
+        <div class="toggle-button">
+          <div class="menu-bar menu-bar-top"></div>
+          <div class="menu-bar menu-bar-middle"></div>
+          <div class="menu-bar menu-bar-bottom"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="menu-wrap">
     <div class="menu-sidebar">
       <ul>
-        <li><a href="#">главная</a></li>
-        <li class="menu-item-has-children"><a href="https://www.facebook.com/">услуги</a>
+        <li><a href="./">главная</a></li>
+        <li class="menu-item-has-children"><a href="./page.html">услуги</a>
           <ul>
-            <li><a href="https://www.facebook.com/">первая услуга</a></li>
-            <li><a href="https://www.facebook.com/">вторая услуга</a></li>
-            <li><a href="#">третья услуга</a></li>
-            <li><a href="#">третья услуга</a></li>
+            <li><a href="./page.html">первая услуга</a></li>
+            <li><a href="./page.html">вторая услуга</a></li>
+            <li><a href="./page.html">третья услуга</a></li>
+            <li><a href="./page.html">третья услуга</a></li>
           </ul>
         </li>
-        <li><a href="#">калькулятор</a></li>
-        <li><a href="#">блог</a></li>
+        <li><a href="./calculate.html">калькулятор</a></li>
+        <li><a href="./category.html">блог</a></li>
       </ul>
     </div>
   </div>
 
- <!-- Custom HTML -->
- <header id="header">
+  <!-- Custom HTML -->
+  <header id="header">
 
-  <div class="top_line_header">
-   <div class="container">
-    <div class="row_person">
-     <ul class="top_contacts">
-      <li class="top_contacts_items"> <i class="fa fa-mobile" aria-hidden="true"></i>
-       1234-5678-9012</li>
-      <li class="top_contacts_items"> <i class="fa fa-envelope" aria-hidden="true"></i> 1234-5678-9012</li>
-      <li class="top_contacts_items"> <i class="fa fa-clock-o" aria-hidden="true"></i> 1234-5678-9012</li>
-     </ul>
-     <ul class="top_socials">
-      <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-        <i class="fa fa-facebook" aria-hidden="true"></i></a>
-      </li>
-      <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-        <i class="fa fa-twitter" aria-hidden="true"></i></a>
-      </li>
-      <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-        <i class="fa fa-behance" aria-hidden="true"></i></a>
-      </li>
-      <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-        <i class="fa fa-dribbble" aria-hidden="true"></i></a>
-      </li>
-      <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-        <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      </li>
-      <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-        <i class="fa fa-youtube" aria-hidden="true"></i></a>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </div>
-  <div class="top_line_menu">
-   <div class="container">
-    <div class="row_person row_line_menu">
-     <div class="top_logo">
-      <img src="img/logo-construction.png" alt="логотип сайта">
-     </div>
-     <div class="top_menu">
-      <ul>
-       <li><a href="#">главная</a></li>
-       <li class="menu-item-has-children"><a href="#">услуги</a>
-        <ul>
-         <li><a href="#">первая услуга</a></li>
-         <li><a href="#">вторая услуга</a></li>
-         <li><a href="#">третья услуга</a></li>
-         <li><a href="#">третья услуга</a></li>
-        </ul>
-       </li>
-       <li><a href="#">калькулятор</a></li>
-       <li><a href="#">блог</a></li>
-      </ul>
-     </div>
-     <div class='be-search'>
-      <div class="searchbutton">
+    <div class="top_line_header">
+      <div class="container">
+        <div class="row_person">
+          <ul class="top_contacts">
+            <li class="top_contacts_items">
+              <a href="#">
+                <i class="fa fa-mobile" aria-hidden="true"></i> +7 (926) 228-61-39
+              </a>
+            </li>
+            <li class="top_contacts_items">
+              <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i> mail@frontendercode.com
+              </a>
+            </li>
+            <li class="top_contacts_items">
+              <a href="#">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> пн-сб, 8:00 - 17:00
+              </a>
+            </li>
+          </ul>
+          <ul class="top_socials">
+            <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                <i class="fa fa-behance" aria-hidden="true"></i></a>
+            </li>
+            <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                <i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            </li>
+            <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+            <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                <i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="search-form">
-       <form action="/search" class="searchform" method="get">
-        <input class="searchbar" name="s" placeholder="Введите запрос" type="text" x-webkit-speech="true">
-        <input class="searchsubmit" type="submit" value="Найти">
-       </form>
-      </div>
-     </div>
     </div>
-   </div>
-  </div>
- </header><!-- /header -->
- <main>
-  <section class="block ">
-   <div class="container">
-    <div class="row">
-     <div class="category_wrap clearfix">
-      <div class="category_content">
-       <div class="post_box">
+
+
+    <div class="top_line_menu">
+      <div class="container">
+        <div class="row_person row_line_menu">
+          <div class="top_logo">
+            <img src="img/logo-construction.png" alt="логотип сайта">
+          </div>
+          <div class="top_menu">
+            <ul>
+              <li><a href="./">главная</a></li>
+              <li class="menu-item-has-children"><a href="./page.html">услуги</a>
+                <ul>
+                  <li><a href="./page.html">первая услуга</a></li>
+                  <li><a href="./page.html">вторая услуга</a></li>
+                  <li><a href="./page.html">третья услуга</a></li>
+                  <li><a href="./page.html">третья услуга</a></li>
+                </ul>
+              </li>
+              <li><a href="./calculate.html">калькулятор</a></li>
+              <li><a href="./category.html">блог</a></li>
+            </ul>
+          </div>
+          <div class="be-search">
+            <div class="searchbutton">
+            </div>
+            <div class="search-form">
+              <form action="/search" class="searchform" method="get">
+                <input class="searchbar" name="s" placeholder="Введите запрос" type="text">
+                <input class="searchsubmit" type="submit" value="Найти">
+              </form>
+            </div>
+          </div>
+
+
+          <div class="toggle-button">
+            <div class="menu-bar menu-bar-top"></div>
+            <div class="menu-bar menu-bar-middle"></div>
+            <div class="menu-bar menu-bar-bottom"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </header><!-- /header -->
 
 
 
-<article class="post_item clearfix">
+  <main>
+    <div class="block" id="slider_visible">
+      <div class="container">
+        <div class="row">
+          <div class="category_wrap clearfix">
+            <div class="category_content">
+              <div class="post_box">
 
-  <h3 class="pagesearch_title">Сформируйте ваш поисковый запрос иначе</h3>
-
-  <form role="search" type="get" id="searchform" class="error_fs" action="<?php echo home_url( '/' ); ?>" >
-    <input class="text-search" type="search" value="" name="s" id="s" placeholder="Введите запрос..." onfocus="if (this.value == 'Введите запрос...') { this.value = 'Введите запрос..'; }" onblur="if(this.value == 'Введите запрос..') { this.value = 'Введите запрос...'; }" value="Введите запрос...">
-    <button type="submit" id="searchsubmit" name="submit" class="submit-search" >поиск</button>
-  </form>
 
 
-  <!--  код который нужно закинуть в отдельный файл searchform.php -->
-  <h6 class="search_rezzult"> 0 результатов/тат для поискового запроса 'ytyyyyyyy'
-<!--   <?php $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e('');
+                <article class="post_item clearfix">
+
+                  <h3 class="pagesearch_title">Сформируйте ваш поисковый запрос иначе</h3>
+                  <!-- type="get" было в теге form  -->
+                  <form role="search" id="searchform" class="error_fs" action="<?php echo home_url( '/' ); ?>">
+                    <input class="text-search" type="search" value="" name="s" id="s" placeholder="Введите запрос..."
+                      onfocus="if (this.value == 'Введите запрос...') { this.value = 'Введите запрос..'; }"
+                      onblur="if(this.value == 'Введите запрос..') { this.value = 'Введите запрос...'; }"
+                      value="Введите запрос...">
+                    <button type="submit" id="searchsubmit" name="submit" class="submit-search">поиск</button>
+                  </form>
+
+
+                  <!--  код который нужно закинуть в отдельный файл searchform.php -->
+                  <h6 class="search_rezzult"> 0 результатов/тат для поискового запроса 'ytyyyyyyy'
+                    <!--   <?php $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e('');
   echo $count . ' '; _e('результатов/тат'); wp_reset_query(); ?>
   <span> для поискового запроса '<?php echo get_search_query(); ?>'</span>
 -->
-</h6>
-</article>
+                  </h6>
+                </article>
 
 
+                <article class="post_item clearfix">
+                  <div class="post-thumb">
+                    <a href="#">
+                      <img src="img/otkritie-sada.jpg" alt="это картинка">
+                    </a>
+                  </div>
+                  <div class="post_text">
+                    <h2> ткрытие сама</h2>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
+                      он, взобравшись мир повстречался б</p>
+                    <a class="read_more" href="#">прочесть</a>
+                  </div>
+                </article>
+                <article class="post_item clearfix">
+                  <div class="post-thumb">
+                    <a href="#">
+                      <img src="img/otkritie-sada.jpg" alt="это картинка">
+                    </a>
+                  </div>
+                  <div class="post_text">
+                    <h2> ткрытие сама</h2>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
+                      он, взобравшись мир повстречался б</p>
+                    <a class="read_more" href="./single.html">прочесть</a>
+                  </div>
+                </article>
+                <article class="post_item clearfix">
+                  <div class="post-thumb">
+                    <a href="#">
+                      <img src="img/otkritie-sada.jpg" alt="это картинка">
+                    </a>
+                  </div>
+                  <div class="post_text">
+                    <h2> ткрытие сама</h2>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
+                      он, взобравшись мир повстречался б</p>
+                    <a class="read_more" href="#">прочесть</a>
+                  </div>
+                </article>
+                <article class="post_item clearfix">
+                  <div class="post-thumb">
+                    <a href="#">
+                      <img src="img/otkritie-sada.jpg" alt="это картинка">
+                    </a>
+                  </div>
+                  <div class="post_text">
+                    <h2> ткрытие сама</h2>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
+                      он, взобравшись мир повстречался б</p>
+                    <a class="read_more" href="./single.html">прочесть</a>
+                  </div>
+                </article>
+                <article class="post_item clearfix">
+                  <div class="post-thumb">
+                    <a href="#">
+                      <img src="img/otkritie-sada.jpg" alt="это картинка">
+                    </a>
+                  </div>
+                  <div class="post_text">
+                    <h2> ткрытие сама</h2>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
+                      он, взобравшись мир повстречался б</p>
+                    <a class="read_more" href="#">прочесть</a>
+                  </div>
+                </article>
+                <article class="post_item clearfix">
+                  <div class="post-thumb">
+                    <a href="#">
+                      <img src="img/otkritie-sada.jpg" alt="это картинка">
+                    </a>
+                  </div>
+                  <div class="post_text">
+                    <h2> ткрытие сама</h2>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
+                      он, взобравшись мир повстречался б</p>
+                    <a class="read_more" href="./single.html">прочесть</a>
+                  </div>
+                </article>
+              </div> <!-- end post_box  -->
+              <!-- Pagination -->
+              <nav class="pagination">
+                <ul>
+                  <li><span class="page-numbers prev inactive">
+                      <i class="fa fa-caret-left"></i></span></li>
+                  <li><span class="page-numbers current">1</span></li>
+                  <li><a href="#" class="page-numbers">2</a></li>
+                  <li><a href="#" class="page-numbers">3</a></li>
+                  <li><a href="#" class="page-numbers">4</a></li>
+                  <li><a href="#" class="page-numbers">5</a></li>
+                  <li><a href="#" class="page-numbers">6</a></li>
+                  <li><a href="#" class="page-numbers">7</a></li>
+                  <li><a href="#" class="page-numbers">8</a></li>
+                  <li><a href="#" class="page-numbers">9</a></li>
+                  <li><a href="#" class="page-numbers next">
+                      <i class="fa fa-caret-right"></i> </a></li>
+                </ul>
+              </nav>
+            </div> <!-- category_content  -->
+            <aside class="category_sidebar widgets">
 
+              <div class="widget">
+                <form id="searchform" class="searchform" action="/" method="get">
+                  <input id="s" class="submit_input" type="text" name="s" placeholder="Введите запрос">
+                  <input id="searchsubmit" class="submit" type="submit" value="найти">
+                </form>
+              </div>
 
+              <div class="widget">
+                <h3 class="widget-title">название122</h3>
+                <ul>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">эта ссылка которая занимает две строки</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a>
+                    <ul class="children ">
+                      <li><a href="#">первая ссылка</a></li>
+                      <li><a href="#">эта ссылка которая занимает две строки</a></li>
+                      <li><a href="#">первая ссылка</a></li>
+                    </ul>
 
+                  </li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                </ul>
 
+              </div>
 
+              <div class="widget">
+                <h3 class="widget-title">название</h3>
+                <ul>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">эта ссылка которая занимает две строки</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                </ul>
 
+              </div>
 
+              <div class="widget">
+                <h3 class="widget-title">название</h3>
+                <ul>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">эта ссылка которая занимает две строки</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                  <li><a href="#">первая ссылка</a></li>
+                </ul>
 
+              </div>
 
-
-
-
-
-
-
-        <article class="post_item clearfix">
-         <div class="post-thumb">
-          <a href="#">
-           <img src="img/otkritie-sada.jpg" alt="это картинка">
-          </a>
-         </div>
-         <div class="post_text">
-          <h2> ткрытие сама</h2>
-          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок он, взобравшись мир повстречался б</p>
-          <a class="read_more" href="#">прочесть</a>
-         </div>
-        </article>
-        <article class="post_item clearfix">
-         <div class="post-thumb">
-          <a href="#">
-           <img src="img/otkritie-sada.jpg" alt="это картинка">
-          </a>
-         </div>
-         <div class="post_text">
-          <h2> ткрытие сама</h2>
-          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок он, взобравшись мир повстречался б</p>
-          <a class="read_more" href="#">прочесть</a>
-         </div>
-        </article>
-        <article class="post_item clearfix">
-         <div class="post-thumb">
-          <a href="#">
-           <img src="img/otkritie-sada.jpg" alt="это картинка">
-          </a>
-         </div>
-         <div class="post_text">
-          <h2> ткрытие сама</h2>
-          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок он, взобравшись мир повстречался б</p>
-          <a class="read_more" href="#">прочесть</a>
-         </div>
-        </article>
-        <article class="post_item clearfix">
-         <div class="post-thumb">
-          <a href="#">
-           <img src="img/otkritie-sada.jpg" alt="это картинка">
-          </a>
-         </div>
-         <div class="post_text">
-          <h2> ткрытие сама</h2>
-          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок он, взобравшись мир повстречался б</p>
-          <a class="read_more" href="#">прочесть</a>
-         </div>
-        </article>
-        <article class="post_item clearfix">
-         <div class="post-thumb">
-          <a href="#">
-           <img src="img/otkritie-sada.jpg" alt="это картинка">
-          </a>
-         </div>
-         <div class="post_text">
-          <h2> ткрытие сама</h2>
-          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок он, взобравшись мир повстречался б</p>
-          <a class="read_more" href="#">прочесть</a>
-         </div>
-        </article>
-        <article class="post_item clearfix">
-         <div class="post-thumb">
-          <a href="#">
-           <img src="img/otkritie-sada.jpg" alt="это картинка">
-          </a>
-         </div>
-         <div class="post_text">
-          <h2> ткрытие сама</h2>
-          <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок он, взобравшись мир повстречался б</p>
-          <a class="read_more" href="#">прочесть</a>
-         </div>
-        </article>
-       </div> <!-- end post_box  -->
-       <!-- Pagination -->
-       <nav class="pagination">
-        <ul>
-         <li><span class="page-numbers prev inactive">
-           <i class="fa fa-caret-left"></i></span></li>
-         <li><span class="page-numbers current">1</span></li>
-         <li><a href="#" class="page-numbers">2</a></li>
-         <li><a href="#" class="page-numbers">3</a></li>
-         <li><a href="#" class="page-numbers">4</a></li>
-         <li><a href="#" class="page-numbers">5</a></li>
-         <li><a href="#" class="page-numbers">6</a></li>
-         <li><a href="#" class="page-numbers">7</a></li>
-         <li><a href="#" class="page-numbers">8</a></li>
-         <li><a href="#" class="page-numbers">9</a></li>
-         <li><a href="#" class="page-numbers next">
-           <i class="fa fa-caret-right"></i> </a></li>
-        </ul>
-       </nav>
-      </div> <!-- category_content  -->
-      <aside class="category_sidebar widgets">
-
-
-
-<div class="widget">
-
-<form id="searchform" class="searchform" action="/" method="get">
-<input id="s" class="submit_input" type="text" name="s" placeholder="Введите запрос" >
-<input id="searchsubmit" class="submit" type="submit" value="найти">
-
-
-</form>
-
-
-</div>
-
-
-
-
-
-      	<div class="widget">
-      		<h3 class="widget-title">название122</h3>
-      		<ul>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">эта ссылка которая занимает две строки</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a>
-      		<ul class="children ">
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">эта ссылка которая занимает две строки</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      		</ul>
-
-      			</li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      		</ul>
-
-      	</div>
-
-
-<div class="widget">
-      		<h3 class="widget-title">название</h3>
-      		<ul>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">эта ссылка которая занимает две строки</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      		</ul>
-
-      	</div>
-
-
-      	<div class="widget">
-      		<h3 class="widget-title">название</h3>
-      		<ul>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">эта ссылка которая занимает две строки</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      			<li><a href="#">первая ссылка</a></li>
-      		</ul>
-
-      	</div>
-
-
-
-
-
-
-
-
-
-
-
-      </aside>
-     </div>
+            </aside>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-  </section>
- </main>
- <footer>
-  <div class="footer_top_fon" style="background-image: url('../img/footer-fon.jpg');
+  </main>
+  <footer>
+    <div class="footer_top_fon" style="background-image: url('../img/footer-fon.jpg');
 				">
-   <div class="container">
-    <div class="row">
-     <div class="footer_top">
-      <div class="footer_top_one">
-       <h3>о компании</h3>
-       <div class="bottom_logo">
-        <img src="img/logo-construction.png" alt="логотип сайта">
-       </div>
-       <div class="footer_bottom_text">
-        Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если приставка страну, большого.
-       </div>
-       <ul class="footer_bottom_social">
-        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-          <i class="fa fa-facebook" aria-hidden="true"></i></a>
-        </li>
-        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-          <i class="fa fa-twitter" aria-hidden="true"></i></a>
-        </li>
-        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-          <i class="fa fa-behance" aria-hidden="true"></i></a>
-        </li>
-        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-          <i class="fa fa-dribbble" aria-hidden="true"></i></a>
-        </li>
-        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-          <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        </li>
-        <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
-          <i class="fa fa-youtube" aria-hidden="true"></i></a>
-        </li>
-       </ul>
+      <div class="container">
+        <div class="row">
+          <div class="footer_top">
+            <div class="footer_top_one">
+              <h3>о компании</h3>
+              <div class="bottom_logo">
+                <img src="img/logo-construction.png" alt="логотип сайта">
+              </div>
+              <div class="footer_bottom_text">
+                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если
+                приставка страну, большого.
+              </div>
+              <ul class="footer_bottom_social">
+                <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                    <i class="fa fa-behance" aria-hidden="true"></i></a>
+                </li>
+                <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                    <i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                </li>
+                <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </li>
+                <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
+                    <i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top_two">
+              <h3>страницы</h3>
+              <ul class="footer_pages_links">
+                <li> <a href="#">Наши услуги</a> </li>
+                <li> <a href="#">Наша команда</a> </li>
+                <li> <a href="#">Тех поддержка</a> </li>
+                <li> <a href="#">Политика приватности</a> </li>
+                <li> <a href="#">Карта сайта</a> </li>
+              </ul>
+            </div>
+            <div class="footer_top_three">
+              <h3>новые посты</h3>
+              <ul class="footer_latest_post">
+                <li class="clearfix">
+                  <span class="footer_post_wrap">
+                    <span class="footer_post_date">20 </span>
+                    <span class="footer_post_month"> авг</span>
+                  </span>
+                  <a href="#">Далеко-далеко за словесными горами в стране</a>
+                </li>
+                <li class="clearfix">
+                  <span class="footer_post_wrap">
+                    <span class="footer_post_date">20 </span>
+                    <span class="footer_post_month"> авг</span>
+                  </span>
+                  <a href="#"> Далеко-далеко за словесными горами в</a>
+                </li>
+                <li class="clearfix">
+                  <span class="footer_post_wrap">
+                    <span class="footer_post_date">20 </span>
+                    <span class="footer_post_month"> авг</span>
+                  </span>
+                  <a href="#"> Далеко-далеко за </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_top_foure">
+              <h3>наши контакты</h3>
+              <ul class="footer_contacts">
+                <li> <span> 123 Новая линия, Москва, Россия</span> </li>
+                <li> <a href="#">mail@frontender.com</a></li>
+                <li>
+                  <a href="tell:+79262286139">+7 (926) 228-61-39</a>
+                  <a href="tell:+79262286144">+7 (926) 228-61-44</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer_top_two">
-       <h3>страницы</h3>
-       <ul class="footer_pages_links">
-        <li> <a href="#">Наши услуги</a> </li>
-        <li> <a href="#">Наша команда</a> </li>
-        <li> <a href="#">Тех поддержка</a> </li>
-        <li> <a href="#">Политика приватности</a> </li>
-        <li> <a href="#">Карта сайта</a> </li>
-       </ul>
-      </div>
-      <div class="footer_top_three">
-       <h3>новые посты</h3>
-       <ul class="footer_latest_post">
-        <li class="clearfix">
-         <span class="footer_post_wrap">
-          <span class="footer_post_date">20 </span>
-          <span class="footer_post_month"> авг</span>
-         </span>
-         <a href="#">Далеко-далеко за словесными горами в стране</a>
-        </li>
-        <li class="clearfix">
-         <span class="footer_post_wrap">
-          <span class="footer_post_date">20 </span>
-          <span class="footer_post_month"> авг</span>
-         </span>
-         <a href="#"> Далеко-далеко за словесными горами в</a>
-        </li>
-        <li class="clearfix">
-         <span class="footer_post_wrap">
-          <span class="footer_post_date">20 </span>
-          <span class="footer_post_month"> авг</span>
-         </span>
-         <a href="#"> Далеко-далеко за </a>
-        </li>
-       </ul>
-      </div>
-      <div class="footer_top_foure">
-       <h3>наши контакты</h3>
-       <ul class="footer_contacts">
-        <li> <span> 123 Новая линия, Москва, Россия</span> </li>
-        <li> <a href="mailto:joe@example.com">hello@exsemple.com</a></li>
-        <li>
-         <a href="tell:+3433434344">+3433434344</a>
-         <a href="tell:+3433434344">+3433434344</a>
-        </li>
-       </ul>
-      </div>
-     </div>
     </div>
-   </div>
-  </div>
-  <div class="footer_bottom">
-   <ul>
-    <li> Copyright 2019</li>
-    <li> Верстка и посадка <a href="#"> Василенко Олег </a></li>
-   </ul>
-  </div>
- </footer>
- <script src="js/scripts.min.js"></script>
+    <div class="footer_bottom">
+      <ul>
+        <li> Copyright 2019</li>
+        <li> Верстка и посадка <a href="#"> Васильченко Игорь </a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
