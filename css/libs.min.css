@@ -1426,6 +1426,16 @@ select
   opacity: 0;
 }
 
+.portfolio .portfolio-item .portfolio-info .in_develop
+{
+  width: 200px;
+  white-space: nowrap;
+  border-radius: 20px;
+  line-height: 40px;
+  font-size: 1.3rem;
+  cursor: progress;
+}
+
 .portfolio .portfolio-item .portfolio-info .link
 {
   right: 60px;
@@ -2414,6 +2424,18 @@ body.dark .shadow-dark
   margin-top: 20px;
 }
 
+@media only screen and (max-width: 1336px)
+{
+}
+
+@media only screen and (max-width: 1280px)
+{
+}
+
+@media only screen and (max-width: 1200px)
+{
+}
+
 @media only screen and (max-width: 1199px)
 {
   .section .container
@@ -2470,7 +2492,7 @@ body.dark .shadow-dark
 {
 }
 
-@media only screen and (max-width: 991px)
+@media only screen and (max-width: 992px)
 {
   .blog .blog-item,
   .portfolio .portfolio-item,
@@ -2483,7 +2505,15 @@ body.dark .shadow-dark
   }
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 980px)
+{
+}
+
+@media only screen and (max-width: 815px)
+{
+}
+
+@media only screen and (max-width: 768px)
 {
   
   .contact .contact-form .col-6,
@@ -2530,6 +2560,10 @@ body.dark .shadow-dark
 {
 }
 
+@media only screen and (max-width: 387px)
+{
+}
+
 @media only screen and (max-width: 384px)
 {
 }
@@ -2537,11 +2571,5 @@ body.dark .shadow-dark
 @media only screen and (max-width: 320px)
 {
 }
-
-
-
-
-
-
 
 /*# sourceMappingURL=libs.min.css.map */
