@@ -25,7 +25,21 @@
   <link rel="stylesheet" href="css/libs.min.css" />
 </head>
 
-<body class="lp">
+<div class="overlay">
+  <nav class="overlayMenu">
+    <ul role="menu">
+      <li><a href="#home">Главная</a></li>
+      <li><a href="#fearures">Достоинства</a></li>
+      <li><a href="#team">Наша команда</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#pricing">Цены</a></li>
+      <li><a href="#partners">Партнеры</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </nav>
+</div>
+
+<body>
   <header class="header_img" id="home">
     <div class="top_line">
       <div class="container">
@@ -43,6 +57,12 @@
                 <li><a href="#contact">Контакты</a></li>
               </ul>
             </div>
+            <!-- 
+гамбургер -->
+
+            <div class="navBurger" role="navigation" id="navToggle"></div>
+
+
           </div>
         </div>
       </div>
@@ -50,9 +70,9 @@
     <div class="owl-carousel" id="carousel_header">
       <div class="items">
         <div class="slider_content" style="background-image: url(images/slide1.jpg);">
-          <div class="container">
+          <div class="container slider_content_wrapper">
             <div class="slider_content_box">
-              <div class="slider_title">landing page шаблон</div>
+              <div class="slider_title">landing page шаблон1</div>
               <div class="slider_name">идеальное система питания</div>
               <div class="slider_rest">лучший выбор от нашего сайта</div>
             </div>
@@ -61,7 +81,7 @@
       </div>
       <div class="items">
         <div class="slider_content" style="background-image: url(images/slide2.jpg);">
-          <div class="container">
+          <div class="container slider_content_wrapper">
             <div class="slider_content_box">
               <div class="slider_title">система питания</div>
               <div class="slider_name">идеальное система питания</div>
@@ -72,7 +92,7 @@
       </div>
       <div class="items">
         <div class="slider_content" style="background-image: url(images/slide1.jpg);">
-          <div class="container">
+          <div class="container slider_content_wrapper">
             <div class="slider_content_box">
               <div class="slider_title">landing page шаблон</div>
               <div class="slider_name">идеальное система питания</div>
@@ -83,7 +103,7 @@
       </div>
       <div class="items">
         <div class="slider_content" style="background-image: url(images/slide2.jpg);">
-          <div class="container">
+          <div class="container slider_content_wrapper">
             <div class="slider_content_box">
               <div class="slider_title">landing page шаблон</div>
               <div class="slider_name">идеальное система питания</div>
@@ -105,20 +125,21 @@
         <div class="block_descr"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
           Предупредила свой, языком. </div>
         <div class="row">
-          <div class="tambl_row-three clearfix">
+          <div class="tambl_row-three">
+
             <div class="tambl_item-three">
               <div class="icon icon-document"></div>
               <div class="tambl_item_cont-two">
                 <div class="tambl-title">strength training</div>
                 <div class="title-text">
                   <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись
-                    текстов щеке живет послушавшись силуэт всеми, жаренные первую деревни буквоград, проектах решила то
-                    коварный своего однажды!
+                    текстов щеке живет послушавшись силуэт всеми, жаренные первую деревни буквоград,
                   </p>
                 </div>
               </div>
             </div>
-            <div class="tambl_item-three tambl_item-h">
+
+            <div class="tambl_item-three">
               <div class="icon icon-heart"></div>
               <div class="tambl_item_cont-two">
                 <div class="tambl-title">cardio fitness</div>
@@ -130,8 +151,51 @@
                 </div>
               </div>
             </div>
-            <div class="tambl_item-three tambl_item-h">
+
+            <div class="tambl_item-three">
               <div class="icon icon-barket"></div>
+              <div class="tambl_item_cont-two">
+                <div class="tambl-title">aquatic</div>
+                <div class="title-text">
+                  <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись
+
+                  </p>
+                  <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись
+                    Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись
+
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tambl_item-three ">
+              <div class="icon icon-flug"></div>
+              <div class="tambl_item_cont-two">
+                <div class="tambl-title">strength training</div>
+                <div class="title-text">
+                  <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись
+                    текстов щеке живет послушавшись силуэт всеми, жаренные первую деревни буквоград, проектах решила то
+                    коварный своего однажды!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tambl_item-three ">
+              <div class="icon icon-finger_up"></div>
+              <div class="tambl_item_cont-two">
+                <div class="tambl-title">cardio fitness</div>
+                <div class="title-text">
+                  <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рукопись
+                    текстов щеке живет послушавшись силуэт всеми, жаренные первую деревни буквоград, проектах решила то
+                    коварный своего однажды!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tambl_item-three ">
+              <div class="icon icon-medicin"></div>
               <div class="tambl_item_cont-two">
                 <div class="tambl-title">aquatic</div>
                 <div class="title-text">
@@ -142,10 +206,13 @@
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </div>
     </section>
+
     <!-- блок с тренерами -->
     <section class="block trainer_fon" id="team">
       <div class="container">
@@ -153,135 +220,201 @@
           <h2>Супер Тренера</h2>
         </div>
         <div class="row">
-          <div class="tambl_row-four clearfix">
+
+          <div class="tambl_row-four">
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/sergey_shefer.jpg" alt="сергей шефеор">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">сергей шефеор</div>
+
+                <div class="trainer_item_main">
+                  <div class="trainer_item_name">Сергей Шефеор</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/oksana_brook.jpg" alt="Оксана Брук">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
+
+                <div class="trainer_item_main">
                   <div class="trainer_item_name">Оксана Брук</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/artur_hamnik.jpg" alt="Артур Хамник">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
+
+                <div class="trainer_item_main">
                   <div class="trainer_item_name">Артур Хамник</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/ulia_rogenchik.jpg" alt="Юлия Рогенчик">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
+
+                <div class="trainer_item_main">
                   <div class="trainer_item_name">Юлия Рогенчик</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/oleg_sharkov.jpg" alt="Олег Шарков">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
+
+                <div class="trainer_item_main">
                   <div class="trainer_item_name">Олег Шарков</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/anna_usova.jpg" alt="Анна Усова">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
+
+                <div class="trainer_item_main">
                   <div class="trainer_item_name">Анна Усова</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/boris_dorin.jpg" alt="борис дорин">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">борис дорин</div>
+
+                <div class="trainer_item_main">
+                  <div class="trainer_item_name">Борис Дорин</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
             <div class="tambl_item-four">
               <div class="trainer_item">
                 <img src="images/trainer/alena_trunova.jpg" alt="алена трунова">
               </div>
               <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">алена трунова</div>
+
+                <div class="trainer_item_main">
+                  <div class="trainer_item_name">Алена Трунова</div>
                   <div class="trainer_item_prof">тренер</div>
-                  <ul class="social_trenier">
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-                  </ul>
                 </div>
+                <p class="trainer_item_content">Далеко-далеко за словесными горами, в стране гласных и согласных живут
+                  рыбные тексты. Ему, рыбного?
+                </p>
+                <ul class="social_trenier">
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                </ul>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -297,233 +430,285 @@
         </div>
         <div class="row">
           <div class="gallery_box">
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/boxer.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/boxer.jpg" alt="Тренировка боксера">
+
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/boxer.jpg">
+                    <img src="images/gallary/boxer.jpg" alt="Тренировка боксера">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">Тренировка боксера</div>
                   <div class="trainer_item_prof">18 января, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
+              <div class="gallery_pic">
                 <img src="images/gallary/sil_tren_women.jpg" alt="женская силовая тренировка">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/sil_tren_women.jpg">
+                    <img src="images/gallary/boxer.jpg" alt="Тренировка боксера">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">женская силовая тренировка</div>
                   <div class="trainer_item_prof">20 января, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/women_tren.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/women_tren.jpg" alt="женская силовая тренировка">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/women_tren.jpg">
+                    <img src="images/gallary/women_tren.jpg" alt="женская силовая тренировка">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">женская силовая тренировка</div>
                   <div class="trainer_item_prof">12 февраля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/boxer_red.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/boxer_red.jpg" alt="тренировка боксера">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/boxer_red.jpg">
+                    <img src="images/gallary/boxer_red.jpg" alt="тренировка боксера">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">тренировка боксера</div>
                   <div class="trainer_item_prof">23 февраля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/velo_womens.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/velo_womens.jpg" alt="Тренировка на велотренажерах">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/velo_womens.jpg">
+                    <img src="images/gallary/velo_womens.jpg" alt="Тренировка на велотренажерах">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">Тренировка на велотренажерах</div>
                   <div class="trainer_item_prof">02 февраля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/atletic_mans.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/atletic_mans.jpg" alt="Тренировка на кольцах">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/atletic_mans.jpg">
+                    <img src="images/gallary/atletic_mans.jpg" alt="Тренировка на кольцах">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">Тренировка на кольцах</div>
                   <div class="trainer_item_prof">12 марта, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/fitness_blog.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/fitness_blog.jpg" alt="Групповые тренинги">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/fitness_blog.jpg">
+                    <img src="images/gallary/fitness_blog.jpg" alt="Групповые тренинги">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">Групповые тренинги</div>
                   <div class="trainer_item_prof">22 апреля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/sport_dance.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/sport_dance.jpg" alt="Танцевальные тренинги">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/sport_dance.jpg">
+                    <img src="images/gallary/sport_dance.jpg" alt="Танцевальные тренинги">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">Танцевальные тренинги</div>
                   <div class="trainer_item_prof">26 февраля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/runer.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/runer.jpg" alt="Спринт">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/runer.jpg">
+                    <img src="images/gallary/runer.jpg" alt="Спринт">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
+              <div class="gallery_item">
+                <div class="gallery_item_box">
                   <div class="trainer_item_name">Спринт</div>
                   <div class="trainer_item_prof">01 марта, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/mounterup.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/mounterup.jpg" alt="скалолазание по стене">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/mounterup.jpg">
+                    <img src="images/gallary/mounterup.jpg" alt="скалолазание по стене">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">скалолазание по стене</div>
+              <div class="gallery_item">
+                <div class="gallery_item_box">
+                  <div class="trainer_item_name">Скалолазание по стене</div>
                   <div class="trainer_item_prof">24 мая, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/bearch_runer.jpg" alt="боксер">
+              <div class="gallery_pic">
+                <img src="images/gallary/bearch_runer.jpg" alt="Утрение пробежки">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/bearch_runer.jpg">
+                    <img src="images/gallary/bearch_runer.jpg" alt="Утрение пробежки">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">утрение пробежки</div>
+              <div class="gallery_item">
+                <div class="gallery_item_box">
+                  <div class="trainer_item_name">Утрение пробежки</div>
                   <div class="trainer_item_prof">15 июня, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
+              <div class="gallery_pic">
                 <img src="images/gallary/kardio_trainer.jpg" alt="кардиотренировки">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/kardio_trainer.jpg">
+                    <img src="images/gallary/kardio_trainer.jpg" alt="кардиотренировки">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">кардиотренировки</div>
+              <div class="gallery_item">
+                <div class="gallery_item_box">
+                  <div class="trainer_item_name">Кардиотренировки</div>
                   <div class="trainer_item_prof">24 июля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/morning_trainer.jpg" alt="кардиотренировки">
+              <div class="gallery_pic">
+                <img src="images/gallary/morning_trainer.jpg" alt="Релакс-тренинг">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/morning_trainer.jpg">
+                    <img src="images/gallary/morning_trainer.jpg" alt="Релакс-тренинг">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">релакс-тренинг</div>
+              <div class="gallery_item">
+                <div class="gallery_item_box">
+                  <div class="trainer_item_name">Релакс-тренинг</div>
                   <div class="trainer_item_prof">24 июля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/womans_runers.jpg" alt="кардиотренировки">
+              <div class="gallery_pic">
+                <img src="images/gallary/womans_runers.jpg" alt="Городские пробежки">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/womans_runers.jpg">
+                    <img src="images/gallary/womans_runers.jpg" alt="Городские пробежки">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">городские пробежки</div>
+              <div class="gallery_item">
+                <div class="gallery_item_box">
+                  <div class="trainer_item_name">Городские пробежки</div>
                   <div class="trainer_item_prof">24 июля, 2017</div>
                 </div>
               </div>
             </div>
+
             <div class="gallery_box_items">
-              <div class="trainer_item">
+              <div class="gallery_pic">
                 <img src="images/gallary/power_trainer.jpg" alt="силовые тренировки">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/power_trainer.jpg">
+                    <img src="images/gallary/power_trainer.jpg" alt="силовые тренировки">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">силовые тренировки</div>
+              <div class="gallery_item">
+                <div class="gallery_item_box">
+                  <div class="trainer_item_name">Силовые тренировки</div>
                   <div class="trainer_item_prof">24 июня, 2017</div>
                 </div>
               </div>
             </div>
-            <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/fitness_train.jpg" alt="кардиотренировки">
-              </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">фитнесс тренировки</div>
-                  <div class="trainer_item_prof">24 июля, 2017</div>
-                </div>
-              </div>
-            </div>
 
             <div class="gallery_box_items">
-              <div class="trainer_item">
+              <div class="gallery_pic">
                 <img src="images/gallary/fitness_train.jpg" alt="кардиотренировки">
+                <div class="gallery_item_fon">
+                  <a class="icon icon-magnify" href="images/gallary/fitness_train.jpg">
+                    <img src="images/gallary/fitness_train.jpg" alt="кардиотренировки">
+                  </a>
+                </div>
               </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">фитнесс тренировки</div>
+              <div class="gallery_item">
+                <div class="gallery_item_box">
+                  <div class="trainer_item_name">Фитнесс-тренировки</div>
                   <div class="trainer_item_prof">24 июля, 2017</div>
                 </div>
               </div>
             </div>
-            <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/fitness_train.jpg" alt="кардиотренировки">
-              </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">фитнесс тренировки</div>
-                  <div class="trainer_item_prof">24 июля, 2017</div>
-                </div>
-              </div>
-            </div>
-            <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/fitness_train.jpg" alt="кардиотренировки">
-              </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">фитнесс тренировки</div>
-                  <div class="trainer_item_prof">24 июля, 2017</div>
-                </div>
-              </div>
-            </div>
-            <div class="gallery_box_items">
-              <div class="trainer_item">
-                <img src="images/gallary/fitness_train.jpg" alt="кардиотренировки">
-              </div>
-              <div class="trainer_item_text">
-                <div class="trainer_item_box">
-                  <div class="trainer_item_name">фитнесс тренировки</div>
-                  <div class="trainer_item_prof">24 июля, 2017</div>
-                </div>
-              </div>
-            </div>
-
 
           </div>
         </div>
       </div>
     </section>
+
     <!-- оформление цен -->
     <section class="block price_fon" id="pricing">
       <div class="container">
@@ -535,79 +720,77 @@
           <div class="price_bock">
 
             <div class="price_bock_items">
-              <div class="price_bock_wrap">
-                <div class="pbn_wrap_center">
-                  <div class="pbn_wrap">
-                    <div class="price_bock_name">
-                      <div class="price_title">стандарт</div>
-                      <div class="price_number">5 555 </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="price_bock_terms">
-                  <ul>
-                    <li> панель управления питанием</li>
-                    <li> календарь событий поддерживается</li>
-                    <li> в коробке и в широких версиях</li>
-                    <li> темная и легкая версия</li>
-                  </ul>
-                </div>
+              <div class="price_bock_name">
+                <div class="price_title">стандарт</div>
+                <div class="price_number">5 555 </div>
               </div>
-              <a href="#call-back" data-sub="yaCounterSSSSS.reachGoal('raschetSmetyHeader'); return true;"
+              <div class="price_bock_terms">
+                <ul>
+                  <li> система силовой и фитнесс нагрузки</li>
+                  <li> система питания</li>
+                  <li> стандартная инструкция по выполнению предложенной программы</li>
+                  <li> еженедельная online-консультация в рамках оплаченного пакета</li>
+                </ul>
+              </div>
+              <a href="#call-back" data-sub="yaCounterS.reachGoal('raschetStandart'); return true;"
                 data-form="Я заказываю пакет Стандарт" data-text="Пакет Стандарт" class="price_buton">получить
                 сейчас</a>
             </div>
 
-            <div class="price_bock_items">
-              <div class="price_bock_wrap">
-                <div class="pbn_wrap_center">
-                  <div class="pbn_wrap">
-                    <div class="price_bock_name">
-                      <div class="price_title">бизнес</div>
-                      <div class="price_number">11 333 </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="price_bock_terms">
-                  <ul>
-                    <li> панель управления питанием</li>
-                    <li> календарь событий поддерживается</li>
-                    <li> в коробке и в широких версиях</li>
-                    <li> темная и легкая версия</li>
-                    <li> революционный слайдер 15 стоит</li>
-
-                  </ul>
-                </div>
-              </div>
-              <a href="#call-back" data-sub="yaCounterAAAAAA.reachGoal('raschetSmetyHeader'); return true;"
-                data-form="Я заказываю пакет Бизнес" data-text="Пакет Бизнес" class="price_buton">получить сейчас</a>
-            </div>
 
             <div class="price_bock_items">
-              <div class="price_bock_wrap">
-                <div class="pbn_wrap_center">
-                  <div class="pbn_wrap">
-                    <div class="price_bock_name">
-                      <div class="price_title">супер</div>
-                      <div class="price_number">16 999 </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="price_bock_terms">
-                  <ul>
-                    <li> панель управления питанием</li>
-                    <li> календарь событий поддерживается</li>
-                    <li> в коробке и в широких версиях</li>
-                    <li> темная и легкая версия</li>
-                    <li> революционный слайдер 15 стоит</li>
-                    <li> революционное обучение</li>
-                    <li> поддержка 24/7</li>
-                  </ul>
-                </div>
+              <div class="price_bock_name">
+                <div class="price_title">продвинутый</div>
+                <div class="price_number">11 333 </div>
               </div>
-              <a href="#call-back" data-sub="yaCounterXXXXX.reachGoal('raschetSmetyHeader'); return true;"
-                data-form="Я заказываю пакет Супер" data-text="Пакет Супер" class="price_buton">получить сейчас</a>
+              <div class="price_bock_terms">
+                <ul>
+                  <li> система силовой и фитнесс нагрузки</li>
+                  <li> система питания</li>
+                  <li> расширенная инструкция по выполнению предложенной программы</li>
+                  <li> еженедельная online-консультация в рамках оплаченного пакета</li>
+                  <li> еженедельная индивидуальная 60-минутная консультация в рамках оплаченного пакета</li>
+                  <li> предоставление в пользование необходимого оборудования</li>
+
+                </ul>
+              </div>
+              <a href="#call-back" data-sub="yaCounterP.reachGoal('raschetPro'); return true;"
+                data-form="Я заказываю пакет Стандарт" data-text="Пакет Стандарт" class="price_buton">получить
+                сейчас</a>
             </div>
+
+
+            <div class="price_bock_items">
+              <div class="price_bock_name">
+                <div class="price_title">бизнесс</div>
+                <div class="price_number">16 999 </div>
+              </div>
+              <div class="price_bock_terms">
+                <ul>
+                  <li> система силовой и фитнесс нагрузки</li>
+                  <li> система питания</li>
+                  <li> расширенная инструкция по выполнению предложенной программы</li>
+                  <li> еженедельная online-консультация в рамках оплаченного пакета</li>
+                  <li> еженедельная индивидуальная 120-минутная консультация в рамках оплаченного пакета</li>
+                  <li> предоставление в пользование необходимого оборудования</li>
+                  <li> контроль результатов на протяжении выполнения предложенной программы</li>
+                </ul>
+              </div>
+              <a href="#call-back" data-sub="yaCounterB.reachGoal('raschetBusiness'); return true;"
+                data-form="Я заказываю пакет Стандарт" data-text="Пакет Стандарт" class="price_buton">получить
+                сейчас</a>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
 
           </div>
         </div>
@@ -660,7 +843,7 @@
     <section class="social_block">
       <div class="container">
         <div class="social_box">
-          <div class="twitter_block clearfix">
+          <div class="twitter_block ">
             <div class="twitter_block_icon"><i class="fa fa-twitter" aria-hidden="true"></i></div>
             <h2 class="twitter_block_text">RT @collis: Trade growth ideas with other founders. Look for wa Trade growth
               ideas with other founders. Look for wa
@@ -692,6 +875,11 @@
           <div class="footer_text"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
             тексты. Далеко-далеко заалеко-далеко за
           </div>
+          <ul class="footer_contact">
+            <li><a href="tel:+1800123456789">+1800 1234 56789</a></li>
+            <li><a href="mailto:frontendercode@gmail.com">frontendercode@gmail.com</a></li>
+          </ul>
+
         </div>
         <div class="footer_right">
           <div class="footer_title">Написать сообщение</div>
@@ -715,6 +903,20 @@
         </div>
       </div>
     </div>
+
+
+
+    <div class="container">
+
+      <div class="copyright_wrapper">
+        <div class="copyright_wrapper_item"> 2020 Все права защищены. Васильченко Игорь.</div>
+        <a href="#home" class="copyright_wrapper_item">Перейти вверх</a>
+      </div>
+    </div>
+
+
+
+
   </footer>
 
   <!--оформление скрытой всплывающей формы -->
