@@ -13,79 +13,19 @@
 </head>
 
 <body>
-  <div class="top_menu_slider">
-    <div class="container">
-      <div class="row_person row_line_menu">
-        <div class="top_logo">
-          <img src="img/logo-construction.png" alt="логотип сайта">
-        </div>
-        <div class="top_menu">
-          <ul>
-            <li><a href="./">главная</a></li>
-            <li class="menu-item-has-children"><a href="./page.html">услуги</a>
-              <ul>
-                <li><a href="./page.html">первая услуга</a></li>
-                <li><a href="./page.html">вторая услуга</a></li>
-                <li><a href="./page.html">третья услуга</a></li>
-                <li><a href="./page.html">третья услуга</a></li>
-              </ul>
-            </li>
-            <li><a href="./calculate.html">калькулятор</a></li>
-            <li><a href="./category.html">блог</a></li>
-          </ul>
-        </div>
-        <div class="be-search">
-          <div class="searchbutton">
-          </div>
-          <div class="search-form">
-            <form action="/search" class="searchform" method="get">
-              <input class="searchbar" name="s" placeholder="Введите запрос" type="text">
-              <input class="searchsubmit" type="submit" value="Найти">
-            </form>
-          </div>
-        </div>
-
-        <div class="toggle-button">
-          <div class="menu-bar menu-bar-top"></div>
-          <div class="menu-bar menu-bar-middle"></div>
-          <div class="menu-bar menu-bar-bottom"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="menu-wrap">
-    <div class="menu-sidebar">
-      <ul>
-        <li><a href="./">главная</a></li>
-        <li class="menu-item-has-children"><a href="./page.html">услуги</a>
-          <ul>
-            <li><a href="./page.html">первая услуга</a></li>
-            <li><a href="./page.html">вторая услуга</a></li>
-            <li><a href="./page.html">третья услуга</a></li>
-            <li><a href="./page.html">третья услуга</a></li>
-          </ul>
-        </li>
-        <li><a href="./calculate.html">калькулятор</a></li>
-        <li><a href="./category.html">блог</a></li>
-      </ul>
-    </div>
-  </div>
-
   <!-- Custom HTML -->
   <header id="header">
-
     <div class="top_line_header">
       <div class="container">
         <div class="row_person">
           <ul class="top_contacts">
             <li class="top_contacts_items">
-              <a href="#">
+              <a href="tell:+79262286139">
                 <i class="fa fa-mobile" aria-hidden="true"></i> +7 (926) 228-61-39
               </a>
             </li>
             <li class="top_contacts_items">
-              <a href="#">
+              <a href="mailto:frontendercode@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i> mail@frontendercode.com
               </a>
             </li>
@@ -119,28 +59,44 @@
       </div>
     </div>
 
-
     <div class="top_line_menu">
       <div class="container">
         <div class="row_person row_line_menu">
           <div class="top_logo">
             <img src="img/logo-construction.png" alt="логотип сайта">
           </div>
-          <div class="top_menu">
+
+    <div class="nav_wrapper">
+         <nav id="menu" class="menu">
+        <ul class="dropdown">
+          <li><a href="./" title="Link">Главная</a></li>
+          <li class="menu-item-has-children">
+            <a href="./page.html" title="Link">Услуги</a>
             <ul>
-              <li><a href="./">главная</a></li>
-              <li class="menu-item-has-children"><a href="./page.html">услуги</a>
+              <li class="menu-item-has-children">
+                <a href="./page.html" title="Link">Первая услуга </a>
                 <ul>
-                  <li><a href="./page.html">первая услуга</a></li>
-                  <li><a href="./page.html">вторая услуга</a></li>
-                  <li><a href="./page.html">третья услуга</a></li>
-                  <li><a href="./page.html">третья услуга</a></li>
+                  <li><a href="./page.html" title="Link">Первый подуслуга</a></li>
+                  <li><a href="./page.html" title="Link">Второй подуслуга</a></li>
                 </ul>
               </li>
-              <li><a href="./calculate.html">калькулятор</a></li>
-              <li><a href="./category.html">блог</a></li>
             </ul>
-          </div>
+          </li>
+          <li><a href="./calculate.html" title="Link">Калькулятор</a>
+          </li>
+          <li><a href="./category.html" title="Link">Блог</a></li>
+          <li><a href="./page.html" title="Link">Контакты</a></li>
+        </ul>
+      </nav>
+            <div class="spinner-master">
+        <input type="checkbox" id="spinner-form" />
+        <label for="spinner-form" class="spinner-spin">
+          <span class="spinner diagonal part-1"></span>
+          <span class="spinner horizontal"></span>
+          <span class="spinner diagonal part-2"></span>
+        </label>
+      </div>
+    </div>
           <div class="be-search">
             <div class="searchbutton">
             </div>
@@ -152,13 +108,6 @@
             </div>
           </div>
 
-
-          <div class="toggle-button">
-            <div class="menu-bar menu-bar-top"></div>
-            <div class="menu-bar menu-bar-middle"></div>
-            <div class="menu-bar menu-bar-bottom"></div>
-          </div>
-
         </div>
       </div>
 
@@ -167,9 +116,8 @@
   </header><!-- /header -->
 
 
-
   <main>
-    <div class="block" id="slider_visible">
+    <div class="block block-page" id="slider_visible">
       <div class="container">
         <div class="row">
           <div class="category_wrap clearfix">
@@ -208,9 +156,8 @@
                     </a>
                   </div>
                   <div class="post_text">
-                    <h2> ткрытие сама</h2>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
-                      он, взобравшись мир повстречался б</p>
+                    <h2> Как мы строим теплицы. Выбор строительных материалов</h2>
+                    <p>Как мы строим теплицы. Выбор строительных материалов Как мы строим теплицы. Выбор строительных материалов </p>
                     <a class="read_more" href="#">прочесть</a>
                   </div>
                 </article>
@@ -221,9 +168,8 @@
                     </a>
                   </div>
                   <div class="post_text">
-                    <h2> ткрытие сама</h2>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
-                      он, взобравшись мир повстречался б</p>
+                    <h2> Что необходимо знать для выполнения заказа возведения дома на участке</h2>
+                    <p>Что необходимо знать для выполнения заказа возведения дома на участке Что необходимо знать для выполнения заказа возведения дома на участке</p>
                     <a class="read_more" href="./single.html">прочесть</a>
                   </div>
                 </article>
@@ -234,9 +180,8 @@
                     </a>
                   </div>
                   <div class="post_text">
-                    <h2> ткрытие сама</h2>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
-                      он, взобравшись мир повстречался б</p>
+                    <h2> Техника безопастности на строительном участке. Требования к рабочим.</h2>
+                    <p>Техника безопастности на строительном участке. Требования к рабочим. Техника безопастности на строительном участке. Требования к рабочим.</p>
                     <a class="read_more" href="#">прочесть</a>
                   </div>
                 </article>
@@ -247,9 +192,8 @@
                     </a>
                   </div>
                   <div class="post_text">
-                    <h2> ткрытие сама</h2>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
-                      он, взобравшись мир повстречался б</p>
+                    <h2> Техника безопастности на строительном участке. Требования к рабочим.</h2>
+                    <p>Техника безопастности на строительном участке. Требования к рабочим. Техника безопастности на строительном участке. Требования к рабочим.</p>
                     <a class="read_more" href="./single.html">прочесть</a>
                   </div>
                 </article>
@@ -260,9 +204,8 @@
                     </a>
                   </div>
                   <div class="post_text">
-                    <h2> ткрытие сама</h2>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
-                      он, взобравшись мир повстречался б</p>
+                    <h2> Техника безопастности на строительном участке. Требования к рабочим.</h2>
+                    <p>Техника безопастности на строительном участке. Требования к рабочим. Техника безопастности на строительном участке. Требования к рабочим.</p>
                     <a class="read_more" href="#">прочесть</a>
                   </div>
                 </article>
@@ -273,9 +216,8 @@
                     </a>
                   </div>
                   <div class="post_text">
-                    <h2> ткрытие сама</h2>
-                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Заголовок
-                      он, взобравшись мир повстречался б</p>
+                    <h2> Техника безопастности на строительном участке. Требования к рабочим.</h2>
+                    <p>Техника безопастности на строительном участке. Требования к рабочим. Техника безопастности на строительном участке. Требования к рабочим.</p>
                     <a class="read_more" href="./single.html">прочесть</a>
                   </div>
                 </article>
@@ -309,7 +251,7 @@
               </div>
 
               <div class="widget">
-                <h3 class="widget-title">название122</h3>
+                <h3 class="widget-title">виджет</h3>
                 <ul>
                   <li><a href="#">первая ссылка</a></li>
                   <li><a href="#">эта ссылка которая занимает две строки</a></li>
@@ -330,7 +272,7 @@
               </div>
 
               <div class="widget">
-                <h3 class="widget-title">название</h3>
+                <h3 class="widget-title">виджет</h3>
                 <ul>
                   <li><a href="#">первая ссылка</a></li>
                   <li><a href="#">эта ссылка которая занимает две строки</a></li>
@@ -344,7 +286,7 @@
               </div>
 
               <div class="widget">
-                <h3 class="widget-title">название</h3>
+                <h3 class="widget-title">виджет</h3>
                 <ul>
                   <li><a href="#">первая ссылка</a></li>
                   <li><a href="#">эта ссылка которая занимает две строки</a></li>
@@ -363,9 +305,9 @@
       </div>
     </div>
   </main>
+  
   <footer>
-    <div class="footer_top_fon" style="background-image: url('../img/footer-fon.jpg');
-				">
+    <div class="footer_top_fon" style='background-image: url("img/footer-fon.jpg");'>
       <div class="container">
         <div class="row">
           <div class="footer_top">
@@ -375,8 +317,7 @@
                 <img src="img/logo-construction.png" alt="логотип сайта">
               </div>
               <div class="footer_bottom_text">
-                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если
-                приставка страну, большого.
+                Мы занимаемся возведением жилищных, производственных, коммерческих комплексов. 
               </div>
               <ul class="footer_bottom_social">
                 <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
@@ -404,7 +345,7 @@
               <ul class="footer_pages_links">
                 <li> <a href="#">Наши услуги</a> </li>
                 <li> <a href="#">Наша команда</a> </li>
-                <li> <a href="#">Тех поддержка</a> </li>
+                <li> <a href="#">Тех. поддержка</a> </li>
                 <li> <a href="#">Политика приватности</a> </li>
                 <li> <a href="#">Карта сайта</a> </li>
               </ul>
@@ -417,21 +358,21 @@
                     <span class="footer_post_date">20 </span>
                     <span class="footer_post_month"> авг</span>
                   </span>
-                  <a href="#">Далеко-далеко за словесными горами в стране</a>
+                  <a href="#">Как мы строим теплицы. Выбор строительных материалов </a>
                 </li>
                 <li class="clearfix">
                   <span class="footer_post_wrap">
                     <span class="footer_post_date">20 </span>
                     <span class="footer_post_month"> авг</span>
                   </span>
-                  <a href="#"> Далеко-далеко за словесными горами в</a>
+                  <a href="#"> Что необходимо знать для выполнения заказа возведения дома на участке </a>
                 </li>
                 <li class="clearfix">
                   <span class="footer_post_wrap">
                     <span class="footer_post_date">20 </span>
                     <span class="footer_post_month"> авг</span>
                   </span>
-                  <a href="#"> Далеко-далеко за </a>
+                  <a href="#"> Техника безопастности на строительном участке. Требования к рабочим.  </a>
                 </li>
               </ul>
             </div>
@@ -457,6 +398,7 @@
       </ul>
     </div>
   </footer>
+ 
   <script src="js/scripts.min.js"></script>
 </body>
 

@@ -13,80 +13,19 @@
 </head>
 
 <body>
-  <div class="top_menu_slider">
-    <div class="container">
-      <div class="row_person row_line_menu">
-        <div class="top_logo">
-          <img src="img/logo-construction.png" alt="логотип сайта">
-        </div>
-        <div class="top_menu">
-          <ul>
-            <li><a href="/">главная</a></li>
-            <li class="menu-item-has-children"><a href="./page.html">услуги</a>
-              <ul>
-                <li><a href="./page.html">первая услуга</a></li>
-                <li><a href="./page.html">вторая услуга</a></li>
-                <li><a href="./page.html">третья услуга</a></li>
-                <li><a href="./page.html">третья услуга</a></li>
-              </ul>
-            </li>
-            <li><a href="./calculate.html">калькулятор</a></li>
-            <li><a href="./category.html">блог</a></li>
-          </ul>
-        </div>
-        <div class="be-search">
-          <div class="searchbutton">
-          </div>
-          <div class="search-form">
-            <form action="/search" class="searchform" method="get">
-              <input class="searchbar" name="s" placeholder="Введите запрос" type="text">
-              <input class="searchsubmit" type="submit" value="Найти">
-            </form>
-          </div>
-        </div>
-
-        <div class="toggle-button">
-          <div class="menu-bar menu-bar-top"></div>
-          <div class="menu-bar menu-bar-middle"></div>
-          <div class="menu-bar menu-bar-bottom"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="menu-wrap">
-    <div class="menu-sidebar">
-      <ul>
-        <li><a href="/">главная</a></li>
-        <li class="menu-item-has-children"><a href="./page.html">услуги</a>
-          <ul>
-            <li><a href="./page.html">первая услуга</a></li>
-            <li><a href="./page.html">вторая услуга</a></li>
-            <li><a href="./page.html">третья услуга</a></li>
-            <li><a href="./page.html">третья услуга</a></li>
-          </ul>
-        </li>
-        <li><a href="./calculate.html">калькулятор</a></li>
-        <li><a href="./category.html">блог</a></li>
-      </ul>
-    </div>
-  </div>
-
   <!-- Custom HTML -->
   <header id="header">
-
-
     <div class="top_line_header">
       <div class="container">
         <div class="row_person">
           <ul class="top_contacts">
             <li class="top_contacts_items">
-              <a href="#">
+              <a href="tell:+79262286139">
                 <i class="fa fa-mobile" aria-hidden="true"></i> +7 (926) 228-61-39
               </a>
             </li>
             <li class="top_contacts_items">
-              <a href="#">
+              <a href="mailto:frontendercode@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i> mail@frontendercode.com
               </a>
             </li>
@@ -126,21 +65,38 @@
           <div class="top_logo">
             <img src="img/logo-construction.png" alt="логотип сайта">
           </div>
-          <div class="top_menu">
+
+    <div class="nav_wrapper">
+         <nav id="menu" class="menu">
+        <ul class="dropdown">
+          <li><a href="./" title="Link">Главная</a></li>
+          <li class="menu-item-has-children">
+            <a href="./page.html" title="Link">Услуги</a>
             <ul>
-              <li><a href="/">главная</a></li>
-              <li class="menu-item-has-children"><a href="./page.html">услуги</a>
+              <li class="menu-item-has-children">
+                <a href="./page.html" title="Link">Первая услуга </a>
                 <ul>
-                  <li><a href="./page.html">первая услуга</a></li>
-                  <li><a href="./page.html">вторая услуга</a></li>
-                  <li><a href="./page.html">третья услуга</a></li>
-                  <li><a href="./page.html">третья услуга</a></li>
+                  <li><a href="./page.html" title="Link">Первый подуслуга</a></li>
+                  <li><a href="./page.html" title="Link">Второй подуслуга</a></li>
                 </ul>
               </li>
-              <li><a href="./calculate.html">калькулятор</a></li>
-              <li><a href="./category.html">блог</a></li>
             </ul>
-          </div>
+          </li>
+          <li><a href="./calculate.html" title="Link">Калькулятор</a>
+          </li>
+          <li><a href="./category.html" title="Link">Блог</a></li>
+          <li><a href="./page.html" title="Link">Контакты</a></li>
+        </ul>
+      </nav>
+            <div class="spinner-master">
+        <input type="checkbox" id="spinner-form" />
+        <label for="spinner-form" class="spinner-spin">
+          <span class="spinner diagonal part-1"></span>
+          <span class="spinner horizontal"></span>
+          <span class="spinner diagonal part-2"></span>
+        </label>
+      </div>
+    </div>
           <div class="be-search">
             <div class="searchbutton">
             </div>
@@ -152,22 +108,15 @@
             </div>
           </div>
 
-
-          <div class="toggle-button">
-            <div class="menu-bar menu-bar-top"></div>
-            <div class="menu-bar menu-bar-middle"></div>
-            <div class="menu-bar menu-bar-bottom"></div>
-          </div>
-
         </div>
       </div>
 
     </div>
 
-  </header><!-- /header -->
+  </header><!-- /header --><!-- /header -->
 
   <main>
-    <section class="header_buner" style="background-image: url('img/fon-header.jpg');">
+    <section class="header_buner" style='background-image: url("img/fon-header.jpg");'>
       <div class="container">
         <div class="row">
           <div class="header_buner_inn">
@@ -473,8 +422,7 @@
     </section>
   </main>
   <footer>
-    <div class="footer_top_fon" style="background-image: url('../img/footer-fon.jpg');
-														">
+    <div class="footer_top_fon" style='background-image: url("img/footer-fon.jpg");'>
       <div class="container">
         <div class="row">
           <div class="footer_top">

@@ -14,66 +14,6 @@
 
 <body>
 
-  <div class="top_menu_slider">
-    <div class="container">
-      <div class="row_person row_line_menu">
-        <div class="top_logo">
-          <img src="img/logo-construction.png" alt="логотип сайта">
-        </div>
-        <div class="top_menu">
-          <ul>
-            <li><a href="./">главная</a></li>
-            <li class="menu-item-has-children"><a href="./page.html">услуги</a>
-              <ul>
-                <li><a href="./page.html">первая услуга</a></li>
-                <li><a href="./page.html">вторая услуга</a></li>
-                <li><a href="./page.html">третья услуга</a></li>
-                <li><a href="./page.html">третья услуга</a></li>
-              </ul>
-            </li>
-            <li><a href="./calculate.html">калькулятор</a></li>
-            <li><a href="./category.html">блог</a></li>
-          </ul>
-        </div>
-        <div class="be-search">
-          <div class="searchbutton">
-          </div>
-          <div class="search-form">
-            <form action="/search" class="searchform" method="get">
-              <input class="searchbar" name="s" placeholder="Введите запрос" type="text">
-              <input class="searchsubmit" type="submit" value="Найти">
-            </form>
-          </div>
-        </div>
-
-        <div class="toggle-button">
-          <div class="menu-bar menu-bar-top"></div>
-          <div class="menu-bar menu-bar-middle"></div>
-          <div class="menu-bar menu-bar-bottom"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="menu-wrap">
-    <div class="menu-sidebar">
-      <ul>
-        <li><a href="./">главная</a></li>
-        <li class="menu-item-has-children"><a href="./page.html" target="_blank">услуги</a>
-          <ul>
-            <li><a href="./page.html" target="_blank">первая услуга</a></li>
-            <li><a href="./page.html" target="_blank">вторая услуга</a></li>
-            <li><a href="./page.html" target="_blank">третья услуга</a></li>
-            <li><a href="./page.html" target="_blank">третья услуга</a></li>
-          </ul>
-        </li>
-        <li><a href="./calculate.html" target="_blank">калькулятор</a></li>
-        <li><a href="./category.html" target="_blank">блог</a></li>
-      </ul>
-    </div>
-  </div>
-
-
   <!-- Custom HTML -->
   <header id="header">
     <div class="top_line_header">
@@ -81,12 +21,12 @@
         <div class="row_person">
           <ul class="top_contacts">
             <li class="top_contacts_items">
-              <a href="#">
+              <a href="tell:+79262286139">
                 <i class="fa fa-mobile" aria-hidden="true"></i> +7 (926) 228-61-39
               </a>
             </li>
             <li class="top_contacts_items">
-              <a href="#">
+              <a href="mailto:frontendercode@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i> mail@frontendercode.com
               </a>
             </li>
@@ -126,21 +66,38 @@
           <div class="top_logo">
             <img src="img/logo-construction.png" alt="логотип сайта">
           </div>
-          <div class="top_menu">
+
+    <div class="nav_wrapper">
+         <nav id="menu" class="menu">
+        <ul class="dropdown">
+          <li><a href="./" title="Link">Главная</a></li>
+          <li class="menu-item-has-children">
+            <a href="./page.html" title="Link">Услуги</a>
             <ul>
-              <li><a href="./">главная</a></li>
-              <li class="menu-item-has-children"><a href="./page.html">услуги</a>
+              <li class="menu-item-has-children">
+                <a href="./page.html" title="Link">Первая услуга </a>
                 <ul>
-                  <li><a href="./page.html">первая услуга</a></li>
-                  <li><a href="./page.html">вторая услуга</a></li>
-                  <li><a href="./page.html">третья услуга</a></li>
-                  <li><a href="./page.html">третья услуга</a></li>
+                  <li><a href="./page.html" title="Link">Первый подуслуга</a></li>
+                  <li><a href="./page.html" title="Link">Второй подуслуга</a></li>
                 </ul>
               </li>
-              <li><a href="./calculate.html">калькулятор</a></li>
-              <li><a href="./category.html">блог</a></li>
             </ul>
-          </div>
+          </li>
+          <li><a href="./calculate.html" title="Link">Калькулятор</a>
+          </li>
+          <li><a href="./category.html" title="Link">Блог</a></li>
+          <li><a href="./page.html" title="Link">Контакты</a></li>
+        </ul>
+      </nav>
+            <div class="spinner-master">
+        <input type="checkbox" id="spinner-form" />
+        <label for="spinner-form" class="spinner-spin">
+          <span class="spinner diagonal part-1"></span>
+          <span class="spinner horizontal"></span>
+          <span class="spinner diagonal part-2"></span>
+        </label>
+      </div>
+    </div>
           <div class="be-search">
             <div class="searchbutton">
             </div>
@@ -152,13 +109,6 @@
             </div>
           </div>
 
-
-          <div class="toggle-button">
-            <div class="menu-bar menu-bar-top"></div>
-            <div class="menu-bar menu-bar-middle"></div>
-            <div class="menu-bar menu-bar-bottom"></div>
-          </div>
-
         </div>
       </div>
 
@@ -166,24 +116,23 @@
 
   </header><!-- /header -->
 
+  
   <main>
-    <section class="header_buner" style="background-image: url('img/fon-header.jpg');">
+    <section class="header_buner" style='background-image: url("img/fon-header.jpg");'>
       <div class="container">
         <div class="row">
           <div class="header_buner_inn">
             <div class="header_buner_container">
               <h2> мы сертифицированные инженеры </h2>
-              <h1> услуги по строительству <span>креатив и профессионализм </span> </h1>
-              <h3> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Родного
-                пустился свой, буквоград своего! Предложения сих на берегу своих злых маленький меня города!
+              <h1> 
+                Предоставляем услуги по <span>строительству и реновации</span> </h1>
+              <h3> Наш коллектив предоставляет услуги по разработке исполнительной документации под строительство домов, гаражей и других строений под ключ!
               </h3>
-
-
               <div class="header_buner_buttons">
                 <ul>
                   <li> <a href="#" class="wellcome_link">узнать более</a>
                   </li>
-                  <li><a href="#" class="wellcome_link">больше о проекте</a>
+                  <li><a href="#" class="wellcome_link">заказать консультацию</a>
                   </li>
                 </ul>
               </div>
@@ -197,21 +146,17 @@
         <div class="row_wellcome">
           <div class="wellcome_left">
             <h2 class="wellcome_title">добро пожаловать </h2>
-            <div class="wellcome_descr"> Далеко-далеко за словесными горами в стране
+            <div class="wellcome_descr"> Компания "Констрактион" работает на рынке 12 лет!
             </div>
             <div class="wellcome_text">
-              <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Свое от всех
-                безопасную ему образ страну, ты он на берегу встретил толку? Путь там осталось над рекламных, она за
-                своего жизни даже ему, если послушавшись! </p>
-              <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Свое от всех
-                безопасную ему образ страну, ты он на берегу встретил толку? Путь там осталось над рекламных, она за
-                своего жизни даже ему, если послушавшись! </p>
+              <p> Наша компания выполняет установку конструкций любой сложности на протяжении 12 лет. В начале нашей деятельности наша компания выполняла работы только по монтажу сложных конструкций. На протяжении первых лет мы работали в роли подрядчика и суперподрядчиков на рынке Москвы и Московской области. </p>
+              <p> С 2014 года наша компания обладает полным циклом производства несущих конструкций, бетонных конструкций, кирпича и цемента.</p>
             </div>
             <a href="#" class="wellcome_link">узнать более</a>
           </div>
           <div class="wellcome_right">
             <div class="wellcome_right_img">
-              <div class="wellcome_right_imgman" style=" background-image: url('img/wellcome-top.png');"></div>
+              <div class="wellcome_right_imgman" style='background-image: url("img/wellcome-top.png");'></div>
             </div>
           </div>
         </div>
@@ -220,68 +165,57 @@
     <section class="block_choose">
       <div class="container">
         <h2 class="block_title">почему мы</h2>
-        <div class="block_descr"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
-          тексты.
-          Которой на берегу даже несколько, гор пор собрал себя предложения родного! Рукописи пунктуация это дал
-          повстречался подпоясал, одна текст правилами рукопись инициал текста до продолжил взобравшись использовало,
-          сих, но оксмокс свой.
+        <div class="block_descr"> Вы, наш будущий заказчик, сможете заказать выполнение работ и застраховать себя от некачественной работы, подписав с нами договор. 
         </div>
         <div class="row_person">
           <div class="choose_item">
             <div class="choose_item_icon">
-              <i class="fa fa-envira" aria-hidden="true"></i>
+              <i class="fa fa-building" aria-hidden="true"></i>
             </div>
             <div class="choose_item_title">
               работаем качественно
             </div>
             <div class="choose_item_text">
-              Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Несколько
-              последний
-              предложения взгляд свой lorem возвращайся.
+              Если бы мы построили дом некачественно, если бы он распался через пять лет или бы он через три года даст трещину, наша бы компания давно бы распалась. Но ведь мы строит до сих пор!
             </div>
           </div><!-- /choose_item -->
           <div class="choose_item">
             <div class="choose_item_icon">
-              <i class="fa fa-futbol-o" aria-hidden="true"></i>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
             </div>
             <div class="choose_item_title">
               всегда вовремя
             </div>
             <div class="choose_item_text">
-              Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Несколько
-              последний
-              предложения взгляд свой lorem возвращайся.
+              Мы работаем со сложными проектами, их завершение зависит не только от умения работать, но и от погоды, сезона. Если бы сдача проекта не будет выполнена в назначеную осень, никто год нас ждать не станет.
             </div>
           </div><!-- /choose_item -->
           <div class="choose_item">
             <div class="choose_item_icon">
-              <i class="fa fa-users" aria-hidden="true"></i>
+              <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
             </div>
             <div class="choose_item_title">
-              мы строим качественно
+              Полный цикл
             </div>
             <div class="choose_item_text">
-              Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Несколько
-              последний
-              предложения взгляд свой lorem возвращайся.
+              Мы сожем гарантировать качественую работа только в том случае, когда сможем проконтролировать его процесс с первого листрочка проекта до символического ключа си до и предоставленного ключа заказчику. 
             </div>
           </div><!-- /choose_item -->
           <div class="choose_item">
             <div class="choose_item_icon">
-              <i class="fa fa-line-chart" aria-hidden="true"></i>
+              <i class="fa fa-cogs" aria-hidden="true"></i>
             </div>
             <div class="choose_item_title">
               мы методичные
             </div>
             <div class="choose_item_text">
-              Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Несколько
-              последний
-              предложения взгляд свой lorem возвращайся.
+              Если вы ошибемся на каждом этапе выполнения работы, мы не сможет выполнить работу в срок, придется переделывать работу. Поэтому нам приходится контролировать даже строительство туалета на высочайшем уровне.
             </div>
           </div><!-- /choose_item -->
         </div>
       </div>
     </section>
+ 
     <section class="block">
       <div class="block_title">наши услуги</div>
       <div class="container">
@@ -290,11 +224,9 @@
             <div class="services_img">
               <img src="img/services_1.jpg" class="img-responsive" alt="это первый пост">
             </div>
-            <h2 class="services_title"> Управление проектом
+            <h2 class="services_title"> Строительство ЖК
             </h2>
-            <div class="services_text"> Далеко-далеко за словесными горами в нашей стране, tggf гласных и согласных
-              живут рыбные тексты. Которое коварный продолжил силуэт, великий которой парадигматическая себя деревни
-              она! Управление проектом
+            <div class="services_text"> В течение 3 лет возведем жилой комплекс любой этажности с подведением всех небходимых комуникаций и обслуживающей инфраструктуры в черте города и вне её. 
             </div>
             <a href="#" class="wellcome_link">узнать более</a>
           </div>
@@ -302,11 +234,9 @@
             <div class="services_img">
               <img src="img/services_2.jpg" class="img-responsive" alt="это первый пост">
             </div>
-            <div class="services_title"> Управление проектом
-            </div>
-            <div class="services_text"> Далеко-далеко за словесными горами в нашей стране, tggf гласных и согласных
-              живут рыбные тексты. Которое коварный продолжил силуэт, великий которой парадигматическая себя деревни
-              она! Управление проектом
+            <h2 class="services_title"> Возведение ТЦ
+            </h2>
+            <div class="services_text"> Мы способны возвести в центре города сложных торговый центр, комплекс складских помещений, формирование дорог для подвозки товаров и доставки приобретения товаров заказчиков. 
             </div>
             <a href="#" class="wellcome_link">узнать более</a>
           </div>
@@ -314,54 +244,43 @@
             <div class="services_img">
               <img src="img/services_3.jpg" class="img-responsive" alt="это первый пост">
             </div>
-            <div class="services_title"> Управление проектом
-            </div>
-            <div class="services_text"> Далеко-далеко за словесными горами в нашей стране, tggf гласных и согласных
-              живут рыбные тексты. Которое коварный продолжил силуэт, великий которой парадигматическая себя деревни
-              она! Управление проектом
+            <h2 class="services_title"> Управление проектом
+            </h2>
+            <div class="services_text"> Мы способны разработать и внедрить комплекс мероприятий, которые способны обеспечить существование жилых комплексов, которые были заселены более 30 лет назад. 
             </div>
             <a href="#" class="wellcome_link">узнать более</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="reviews_fon" style="background-image: url('img/reviews-fon.jpg');">
+    <section class="reviews_fon" style='background-image: url("img/reviews-fon.jpg");'>
       <div class="container">
         <div class="row">
-          <h2 class="block_title">отзывы клиентом</h2>
-          <div class="block_descr"> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные
-            тексты. Которой на берегу даже несколько, гор пор собрал себя предложения родного! Рукописи пунктуация это
-            дал повстречался подпоясал, одна текст правилами рукопись инициал текста до продолжил взобравшись
-            использовало, сих, но оксмокс свой.
+          <h2 class="block_title">отзывы клиентов</h2>
+          <div class="block_descr"> В течение 12 лет мы собрали множество отзывов о проделанной работы. Мы их собрали и предоставлили их на отдельной страницы. Вы сможете связаться с любым заказчиком и поговорить с ним в оговоренное время.    
           </div>
           <div class="reviews_block">
             <div class="reviews_block_items">
               <div class="reviews_block_content">
-                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если
-                приставка страну, большого, образ подзаголовок. Своего безопасную жизни прямо, строчка сбить она
-                проектах запятых силуэт от всех, даже, семь?
+                Наша компания построила наш дом с кмпанией Констракшен. Уже 10 лет в нем живет наша семья. Мы довольны. Наши желания были воплощены в дереве и металле, наши дорожки до сих пор уложены все той же плитки и она не скользит. Рекомендую.  
               </div>
               <div class="reviews_block_info">
                 <img src="img/rewuer_1.jpg" alt="отзыв одного человека">
-                <div class="reviews_block_name">олег крисбо</div>
+                <div class="reviews_block_name">Алёна Печенегова</div>
               </div>
             </div>
             <div class="reviews_block_items">
               <div class="reviews_block_content reviews_block_content_main">
-                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если
-                приставка страну, большого, образ подзаголовок. Своего безопасную жизни прямо, строчка сбить она
-                проектах запятых силуэт от всех, даже, семь?
+                Мы получили 4 года назад приусадебный участок в наследство. Сказать то, что домом можно было пользоваться, значит соврать. Поэтому нам пришлось построить небольшой домик на 50 кв.м. Благодаря вам мы реализовали свои желания уже через полгода. 
               </div>
               <div class="reviews_block_info">
                 <img src="img/rewuer_2.jpg" alt="отзыв одного человека">
-                <div class="reviews_block_name">олег крисбо</div>
+                <div class="reviews_block_name">Григорий Кирборов</div>
               </div>
             </div>
             <div class="reviews_block_items">
               <div class="reviews_block_content">
-                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если
-                приставка страну, большого, образ подзаголовок. Своего безопасную жизни прямо, строчка сбить она
-                проектах запятых силуэт от всех, даже, семь?
+                Мы нуждались в быстром возведении теплиц в промышленном маштабе. Поэтому обратились к этому застройщику. Все пожелания были приняты в разработке проекта. В результате вы уже выращиваем продукцию в течение 4 лет. Готовимся к увеличению хозяйства
               </div>
               <div class="reviews_block_info">
                 <img src="img/rewuer_1.jpg" alt="отзыв одного человека">
@@ -389,14 +308,20 @@
                 <input class="contact_form_input" type="text" name="name" placeholder="Имя" required="required">
               </div>
               <div class="contact_form_item">
-                <input class="contact_form_input" type="text" name="email" placeholder="Email" required="required">
+                <input class="contact_form_input" type="text" name="tel" placeholder="Телефон" required="required">
               </div>
               <div class="contact_form_item">
                 <textarea class="contact_form_textarea" name="textarea" placeholder="Сообщение"
                   required="required"></textarea>
               </div>
               <div class="contact_form_item">
+                <div class="contact_form_item_order">
+                    <label for="betonnastep" class=" checkbox-transform_form buss_inputin_label">
+                      <input type="checkbox" name="betlesnichi" value="Бетонная" id="betonnastep"
+                        class=" form__checkbox__input buss_inputin_input">
+                      <span class="form__checkbox__label">Я даю согласие на обработку своих персональных данных и ознакомлен с <a href="#">политикой конфиденциальности</a></span></label>
                 <input class="get-buttons" name="submit" type="submit" id="submits" value="Отправить">
+             </div>
               </div>
             </form>
           </div>
@@ -404,8 +329,9 @@
       </div>
     </section>
   </main>
+
   <footer>
-    <div class="footer_top_fon" style="background-image: url('img/footer-fon.jpg');">
+    <div class="footer_top_fon" style='background-image: url("img/footer-fon.jpg");'>
       <div class="container">
         <div class="row">
           <div class="footer_top">
@@ -415,8 +341,7 @@
                 <img src="img/logo-construction.png" alt="логотип сайта">
               </div>
               <div class="footer_bottom_text">
-                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Щеке если
-                приставка страну, большого.
+                Мы занимаемся возведением жилищных, производственных, коммерческих комплексов. 
               </div>
               <ul class="footer_bottom_social">
                 <li> <a href="https://www.facebook.com/frontendercode" target="_blank">
@@ -444,7 +369,7 @@
               <ul class="footer_pages_links">
                 <li> <a href="#">Наши услуги</a> </li>
                 <li> <a href="#">Наша команда</a> </li>
-                <li> <a href="#">Тех поддержка</a> </li>
+                <li> <a href="#">Тех. поддержка</a> </li>
                 <li> <a href="#">Политика приватности</a> </li>
                 <li> <a href="#">Карта сайта</a> </li>
               </ul>
@@ -457,21 +382,21 @@
                     <span class="footer_post_date">20 </span>
                     <span class="footer_post_month"> авг</span>
                   </span>
-                  <a href="#">Далеко-далеко за словесными горами в стране</a>
+                  <a href="#">Как мы строим теплицы. Выбор строительных материалов </a>
                 </li>
                 <li class="clearfix">
                   <span class="footer_post_wrap">
                     <span class="footer_post_date">20 </span>
                     <span class="footer_post_month"> авг</span>
                   </span>
-                  <a href="#"> Далеко-далеко за словесными горами в</a>
+                  <a href="#"> Что необходимо знать для выполнения заказа возведения дома на участке </a>
                 </li>
                 <li class="clearfix">
                   <span class="footer_post_wrap">
                     <span class="footer_post_date">20 </span>
                     <span class="footer_post_month"> авг</span>
                   </span>
-                  <a href="#"> Далеко-далеко за </a>
+                  <a href="#"> Техника безопастности на строительном участке. Требования к рабочим.  </a>
                 </li>
               </ul>
             </div>
@@ -497,6 +422,7 @@
       </ul>
     </div>
   </footer>
+ 
   <script src="js/scripts.min.js"></script>
 </body>
 
