@@ -895,7 +895,7 @@ a.menu-link.active::after{content:"\2715"}
 @media only screen and (max-width:960px){
 .top_menu{display:none}
 .top_contacts_items{padding-right:20px;font-size:.9rem}
-.row_line_menu{padding-right:70px}
+.row_line_menu{padding-right:10px}
 .toggle-button{display:block}
 .top_line_menu{z-index:14}
 }
@@ -904,6 +904,9 @@ a.menu-link.active::after{content:"\2715"}
 .footer_top{flex-wrap:wrap}
 .footer_top_foure,.footer_top_one,.footer_top_three,.footer_top_two{width:49%}
 .bottom_logo img{width:58%}
+}
+@media only screen and (max-width:600px){
+.row_line_menu{height:65px}
 }
 .block{padding:50px 0}
 .calculate_form{display:flex;justify-content:flex-start;margin:0;padding:0}

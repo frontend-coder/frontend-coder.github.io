@@ -897,7 +897,7 @@ a.menu-link.active::after{content:"\2715"}
 @media only screen and (max-width:960px){
 .top_menu{display:none}
 .top_contacts_items{padding-right:20px;font-size:.9rem}
-.row_line_menu{padding-right:70px}
+.row_line_menu{padding-right:10px}
 .toggle-button{display:block}
 .top_line_menu{z-index:14}
 }
@@ -906,6 +906,9 @@ a.menu-link.active::after{content:"\2715"}
 .footer_top{flex-wrap:wrap}
 .footer_top_foure,.footer_top_one,.footer_top_three,.footer_top_two{width:49%}
 .bottom_logo img{width:58%}
+}
+@media only screen and (max-width:600px){
+.row_line_menu{height:65px}
 }
 .block-page{margin-top:85px}
 .header_buner{position:relative;min-height:740px;background-position:center center;background-size:cover;background-repeat:no-repeat;background-attachment:fixed}
@@ -1134,8 +1137,13 @@ label.comment-field{display:block;margin:10px 0 5px;color:#666}
 .form_input:focus,.form_input:hover{color:#666;background-color:#fff!important}
 .form_input:focus-within{color:#666;background-color:#fff!important}
 .form_input:visited{color:#666;background-color:red!important}
+.our_spech{display:none}
 @media only screen and (max-width:1336px){
 .header_buner_container h1{font-size:3.8rem}
+}
+@media only screen and (max-width:1190px){
+form .checkbox_box .css-label .checkbox__label{display:inline-block;line-height:1.4}
+form .checkbox_box .css-label .checkbox__label::after,form .checkbox_box .css-label .checkbox__label::before{left:-37px;top:20px}
 }
 @media screen and (max-width:1080px){
 .header_buner_container h1{font-size:3.4rem;line-height:1.16129}
@@ -1214,12 +1222,14 @@ label.comment-field{display:block;margin:10px 0 5px;color:#666}
 .category_sidebar{width:100%}
 }
 @media only screen and (max-width:480px){
+.header_buner_buttons ul li{margin-bottom:20px}
 .header_buner_container h1,.rezult_block_title{font-size:2.5rem}
 .header_buner_container h2{font-size:1.6rem;line-height:1.3}
 .top_contacts{display:block}
 .calculate_form_input,.calculate_size_item{width:100%}
 .rezult_list li{display:flex}
 .rezult_list li span{position:static;display:block;width:100%;text-align:right}
+.result_calcul_wraper,form .checkbox_box{width:90%}
 }
 @media only screen and (max-width:425px){
 #postcomment{padding:10px;text-align:left}
@@ -1229,11 +1239,20 @@ label.comment-field{display:block;margin:10px 0 5px;color:#666}
 .top_contacts_items{padding-right:8px}
 .top_contacts{flex-wrap:wrap}
 .top_contacts_items a{font-size:1.1rem}
-.contact_form_item,.contact_form_item:nth-child(3){width:100%}
+.contact_form_item,.contact_form_item:nth-child(3),.contact_form_item:nth-child(4){width:100%}
 .rezult_block_green_cost{font-size:2.5rem}
+.contact_form_item_order{margin-right:20px;margin-left:20px}
+}
+@media only screen and (max-width:412px){
+.checkbox_box,.result_calcul_wraper{width:80%}
+.checkbox__label{display:inline-block;line-height:1.4}
+form .checkbox_box .css-label .checkbox__label::after,form .checkbox_box .css-label .checkbox__label::before{left:-37px;top:20px}
+}
+@media only screen and (max-width:387px){
+.result_calcul_wraper{width:100%}
 }
 @media only screen and (max-width:384px){
-.search-form{left:-189px;top:100%}
+.search-form{left:-250px;top:100%}
 .rezult_block_green_cost{font-size:2.3rem}
 }
 @media only screen and (max-width:360px){
@@ -1245,6 +1264,6 @@ label.comment-field{display:block;margin:10px 0 5px;color:#666}
 .rezult_block_title{font-size:1.5rem}
 }
 @media only screen and (max-width:320px){
-.search-form{left:-174px;top:100%}
+.search-form{left:-232px;top:100%}
 }
 /*# sourceMappingURL=libs.min.css.map */
